@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Plans | Planitary</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	<!-- App Header -->
+	<header>
+		<a href="#" style="visibility:hidden">Back</a>
+		<h1>Planitary</h1>
+		<a href="/">Log Out</a>
+	</header>
+
+	<!-- App Main Content -->
+	<main>
+
+		<!-- Groups -->
+		{{#each groups}}
+		<div>
+			<h2>{{name}}</h2>
+
+			<!-- Suggested Plans -->
+			{{#each plans}}
+			<div>
+				<header>
+					<h6>{{month}} {{day}}, {{year}}</h6>
+				</header>
+				<div>
+					<p>{{friends.length}} friends going</p>
+				</div>
+			</div>
+			{{/each}}
+
+		</div>
+		{{/each}}
+	</main>
+
+	<!-- App Navigation -->
+	<footer>
+		<nav>
+			{{#each pages}}
+			<a href="{{link}}">
+				<img src="/images/{{icon}}" alt="{{title}} Page">
+				<p>{{title}}</p>
+			</a>
+			{{/each}}
+		</nav>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "pages": [
+    {
+      "title": "Plans",
+      "link": "/plans",
+      "icon": ""
+    },
+    {
+      "title": "Events",
+      "link": "/events",
+      "icon": ""
+    },
+    {
+      "title": "Groups",
+      "link": "/groups",
+      "icon": ""
+    },
+    {
+      "title": "Settings",
+      "link": "/settings",
+      "icon": ""
+    }
+  ],
+  "groups": [
+    {
+      "name": "CSE120",
+      "plans": [
+        {
+          "day": "12",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Monday",
+          "friends": ["0", "1", "2"]
+        },
+        {
+          "day": "15",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Thursday",
+          "friends": ["0", "1"]
+        }
+      ]
+    }
+  ],
+  "friends": [
+    {
+      "name": "Bobby D",
+      "id": "0"
+    },
+    {
+      "name": "Chucky C",
+      "id": "1"
+    },
+    {
+      "name": "Tommy T",
+      "id": "2"
+    }
+  ]
+}
