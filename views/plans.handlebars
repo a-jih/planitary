@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/plans.css">
+	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 </head>
 
 <body>
@@ -40,10 +41,10 @@
 
 	<!-- App Navigation -->
 	<footer id="app-nav">
-		<nav class="nav nav-fill">
+		<nav class="navbar">
 			{{#each pages}}
-			<a class="nav-item nav-link" href="{{link}}">
-				<!--<img src="/images/{{icon}}" alt="{{title}} Page">-->
+			<a href="{{link}}">
+				<img src="/icons/calendar.svg" alt="{{title}} Page">
 				<p>{{title}}</p>
 			</a>
 			{{/each}}
