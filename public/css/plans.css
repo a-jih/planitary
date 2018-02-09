@@ -60,3 +60,13 @@ main {
 #app-content>.card + .card {
   margin-top: 1em;
 }
+
+.add-group {
+  position: absolute;
+  right: 2rem;
+  bottom: 8rem;
+  background-color: lightcoral;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}

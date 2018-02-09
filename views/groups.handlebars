@@ -2,21 +2,44 @@
 <head>
 	<title>Groups | Planitary</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/plans.css">
+	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
 </head>
 <body>
-	<header>
-		<a href="#" style="visibility:hidden">Back</a>
-		<h1>Planitary</h1>
-		<a href="/">Log Out</a>
+
+	<!-- App Header -->
+	<header id="app-header">
+		<p id="app-title">Planitary</p>
 	</header>
-	<main>
-		<h2>Groups</h2>
+
+	<!-- App Main Content -->
+	<main id="app-content" class="container-fluid">
+		{{#each groups}}
+		<div class="card">
+			<div class="card-body">
+				<p class="card-title">
+					{{name}}
+				</p>
+				<p class="card-text">
+					{{members.length}} members
+				</p>
+			</div>
+		</div>
+		{{/each}}
+
+		<!-- Add Group -->
+		<button type="button" class="add-group">
+			<img src="/icons/plus.svg">
+		</button>
 	</main>
-	<footer>
-		<nav>
+
+	<!-- App Navigation -->
+	<footer id="app-nav">
+		<nav class="navbar">
 			{{#each pages}}
 			<a href="{{link}}">
-				<img src="/images/{{icon}}" alt="{{title}} Page">
+				<img src="/icons/{{icon}}" alt="{{title}} Page">
 				<p>{{title}}</p>
 			</a>
 			{{/each}}

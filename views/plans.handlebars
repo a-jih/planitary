@@ -27,7 +27,7 @@
 			<div class="card-body scrolling-wrapper">
 				<!-- Suggested Plans -->
 				{{#each plans}}
-				<a class="suggestion" href="#">
+				<a class="suggestion" href="/eventCreation">
 					<div class="card">
 						<div class="card-body">
 							<h6 class="card-title">{{month}} {{day}}, {{year}}</h6>
@@ -46,7 +46,7 @@
 		<nav class="navbar">
 			{{#each pages}}
 			<a href="{{link}}">
-				<img src="/icons/calendar.svg" alt="{{title}} Page">
+				<img src="/icons/{{icon}}" alt="{{title}} Page">
 				<p>{{title}}</p>
 			</a>
 			{{/each}}

@@ -13,6 +13,7 @@ var plans    = require('./routes/plans');
 var events   = require('./routes/events');
 var groups   = require('./routes/groups');
 var settings = require('./routes/settings');
+var addEvent = require('./routes/eventCreation');
 
 var app = express();
 
@@ -42,6 +43,7 @@ app.get('/plans', plans.view);
 app.get('/events', events.view);
 app.get('/groups', groups.view);
 app.get('/settings', settings.view);
+app.get('/eventCreation', addEvent.view);
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){

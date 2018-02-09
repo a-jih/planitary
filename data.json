@@ -3,27 +3,28 @@
     {
       "title": "Plans",
       "link": "/plans",
-      "icon": ""
+      "icon": "globe.svg"
     },
     {
       "title": "Events",
       "link": "/events",
-      "icon": ""
+      "icon": "calendar.svg"
     },
     {
       "title": "Groups",
       "link": "/groups",
-      "icon": ""
+      "icon": "users.svg"
     },
     {
       "title": "Settings",
       "link": "/settings",
-      "icon": ""
+      "icon": "settings.svg"
     }
   ],
   "groups": [
     {
       "name": "CSE120",
+      "members": ["0", "1", "2"],
       "plans": [
         {
           "day": "12",
@@ -50,6 +51,7 @@
     },
     {
       "name": "Squad",
+      "members": ["3", "1"],
       "plans": [
         {
           "day": "12",
@@ -75,7 +77,8 @@
       ]
     },
     {
-      "name": "Squad",
+      "name": "Lorem ipsum",
+      "members": ["0", "1", "2", "3"],
       "plans": [
         {
           "day": "12",
@@ -113,6 +116,10 @@
     {
       "name": "Tommy T",
       "id": "2"
+    },
+    {
+      "name": "Robby R",
+      "id": "3"
     }
   ]
 }
