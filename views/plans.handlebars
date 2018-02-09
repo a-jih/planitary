@@ -1,49 +1,49 @@
 <html>
+
 <head>
 	<title>Plans | Planitary</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="/css/plans.css">
 </head>
+
 <body>
 
 	<!-- App Header -->
-	<header>
-		<a href="#" style="visibility:hidden">Back</a>
-		<h1>Planitary</h1>
-		<a href="/">Log Out</a>
+	<header id="app-header">
+		<p id="app-title">Planitary</p>
 	</header>
 
 	<!-- App Main Content -->
-	<main>
+	<main id="app-content" class="container-fluid">
 
 		<!-- Groups -->
 		{{#each groups}}
-		<div>
-			<h2>{{name}}</h2>
-
-			<!-- Suggested Plans -->
-			{{#each plans}}
-			<div>
-				<header>
-					<h6>{{month}} {{day}}, {{year}}</h6>
-				</header>
-				<div>
-					<p>{{friends.length}} friends going</p>
+		<div class="card">
+			<header class="card-header">
+				{{name}}
+			</header>
+			<div class="card-body">
+				<!-- Suggested Plans -->
+				{{#each plans}}
+				<div class="card">
+					<div class="card-body">
+						<h6 class="card-title">{{month}} {{day}}, {{year}}</h6>
+						<p class="card-text">{{friends.length}} friends going</p>
+					</div>
 				</div>
+				{{/each}}
 			</div>
-			{{/each}}
-
 		</div>
 		{{/each}}
 	</main>
 
 	<!-- App Navigation -->
-	<footer>
-		<nav>
+	<footer id="app-nav">
+		<nav class="nav nav-fill">
 			{{#each pages}}
-			<a href="{{link}}">
-				<img src="/images/{{icon}}" alt="{{title}} Page">
+			<a class="nav-item nav-link" href="{{link}}">
+				<!--<img src="/images/{{icon}}" alt="{{title}} Page">-->
 				<p>{{title}}</p>
 			</a>
 			{{/each}}
