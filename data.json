@@ -38,6 +38,65 @@
           "year": "2017",
           "weekday": "Thursday",
           "friends": ["0", "1"]
+        },
+        {
+          "day": "23",
+          "month": "March",
+          "year": "2017",
+          "weekday": "Thursday",
+          "friends": ["2", "1"]
+        }
+      ]
+    },
+    {
+      "name": "Squad",
+      "plans": [
+        {
+          "day": "12",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Monday",
+          "friends": ["0", "1", "2"]
+        },
+        {
+          "day": "15",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Thursday",
+          "friends": ["0", "1"]
+        },
+        {
+          "day": "23",
+          "month": "March",
+          "year": "2017",
+          "weekday": "Thursday",
+          "friends": ["2", "1"]
+        }
+      ]
+    },
+    {
+      "name": "Squad",
+      "plans": [
+        {
+          "day": "12",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Monday",
+          "friends": ["0", "1", "2"]
+        },
+        {
+          "day": "15",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Thursday",
+          "friends": ["0", "1"]
+        },
+        {
+          "day": "23",
+          "month": "March",
+          "year": "2017",
+          "weekday": "Thursday",
+          "friends": ["2", "1"]
         }
       ]
     }

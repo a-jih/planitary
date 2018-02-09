@@ -15,6 +15,7 @@
   background-color: lightcyan;
   padding: 1rem;
   height: 4rem;
+  z-index: 10000;
 }
 
 #app-title {
@@ -27,14 +28,12 @@
 
 main {
   margin-top: 4rem;
-}
-
-.suggestion {
-  display: block;
+  padding-top: 1rem;
+  padding-bottom: 10rem;
 }
 
 .suggestion + .suggestion {
-  margin-top: 1em;
+  margin-left: 1em;
 }
 
 .card {
@@ -46,4 +45,18 @@ main {
 }
 .container {
   padding: 2px 16px;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap
+}
+
+.scrolling-wrapper>.suggestion {
+  display: inline-block;
+}
+
+#app-content>.card + .card {
+  margin-top: 1em;
 }
