@@ -27,12 +27,14 @@
 			<div class="card-body">
 				<!-- Suggested Plans -->
 				{{#each plans}}
-				<div class="card">
-					<div class="card-body">
-						<h6 class="card-title">{{month}} {{day}}, {{year}}</h6>
-						<p class="card-text">{{friends.length}} friends going</p>
+				<a class="suggestion" href="#">
+					<div class="card">
+						<div class="card-body">
+							<h6 class="card-title">{{month}} {{day}}, {{year}}</h6>
+							<p class="card-text">{{friends.length}} friends going</p>
+						</div>
 					</div>
-				</div>
+				</a>
 				{{/each}}
 			</div>
 		</div>

@@ -29,6 +29,10 @@ main {
   margin-top: 4rem;
 }
 
-.card + .card {
-  margin-top: 0.5em;
+.suggestion {
+  display: block;
+}
+
+.suggestion + .suggestion {
+  margin-top: 1em;
 }
