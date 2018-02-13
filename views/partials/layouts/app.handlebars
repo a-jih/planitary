@@ -1,0 +1,37 @@
+{{!-- layouts/app.handlebars --}}
+
+{{#> layouts/base title=page-title}}
+
+  {{#*inline "head-block"}}
+  <link rel="stylesheet" type="text/css" href="/css/general.css">
+  <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+  {{/inline}}
+
+  {{!-- App Header --}}
+  {{#*inline "header-block"}}
+  <header id="app-header">
+    {{#if back-button}}
+    {{/if}}
+    <p class="app-title">Planitary</p>
+  </header>
+  {{/inline}}
+
+  {{!-- App Footer --}}
+  {{#*inline "footer-block"}}
+  <nav id="app-nav" class="navbar">
+    {{#each pages}}
+    <div class="navbar-item">
+      <a class="navbar-link {{#if_eq title ../page-title}}active{{/if_eq}}" href="{{link}}">
+        <i data-feather="{{icon}}"></i>
+        <p>{{title}}</p>
+      </a>
+    </div>
+    {{/each}}
+  </nav>
+  {{/inline}}
+
+  {{#*inline "scripts-block"}}
+  <script>feather.replace()</script>
+  {{/inline}}
+
+{{/layouts/base}}

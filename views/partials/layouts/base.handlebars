@@ -1,0 +1,38 @@
+{{!--  --}}
+
+<html>
+
+<head>
+	<title>
+		{{#if title}}{{title}} | {{/if}}Planitary
+		{{test}}
+  </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap-reboot.min.css">
+
+	<script type="text/javascript" src="/js/feather.min.js"></script>
+
+	{{#> head-block}}
+		{{!-- Custom <head> content --}}
+	{{/head-block}}
+</head>
+
+<body>
+	{{#> header-block}}
+		{{!-- Header Content --}}
+	{{/header-block}}
+
+	{{#> main-block}}
+		{{!-- Main Content --}}
+		{{test}}
+	{{/main-block}}
+
+	{{#> footer-block}}
+		{{!-- Footer Content --}}
+	{{/footer-block}}
+  
+	{{#> scripts-block}}
+		{{!-- Custom scripts --}}
+	{{/scripts-block}}
+</body>
+</html>

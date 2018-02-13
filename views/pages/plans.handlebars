@@ -1,0 +1,69 @@
+{{!--<html>
+
+<head>
+	<title>Plans | Planitary</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/general.css">
+	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
+
+	<script type="text/javascript" src="/js/feather.min.js"></script>
+</head>
+
+<body>
+
+	<!-- App Header -->
+	<header id="app-header">
+		<p class="app-title">Planitary</p>
+	</header>
+
+	<!-- App Main Content -->
+	<main id="app-content" class="container-fluid">
+
+		<!-- Groups -->
+		{{#each groups}}
+		<div class="card">
+			<header class="card-header">
+				{{name}}
+			</header>
+			<div class="card-body scrolling-wrapper">
+				<!-- Suggested Plans -->
+				{{#each plans}}
+				<a class="suggestion" href="/eventCreation">
+					<div class="card">
+						<div class="card-body">
+							<h6 class="card-title">{{month}} {{day}}, {{year}}</h6>
+							<p class="card-text">{{friends.length}} friends available</p>
+						</div>
+					</div>
+				</a>
+				{{/each}}
+			</div>
+		</div>
+		{{/each}}
+	</main>
+
+	<!-- App Navigation -->
+	<!--
+	<nav id="app-nav" class="navbar">
+		{{#each pages}}
+		<div class="navbar-item">
+			{{#if_eq title 'Plans'}}
+			<a class="navbar-link active" href="{{link}}">
+			{{else}}
+			<a class="navbar-link" href="{{link}}">
+			{{/if_eq}}
+				<i data-feather="{{icon}}"></i>
+				<p>{{title}}</p>
+			</a>
+		</div>
+		{{/each}}
+	</nav>
+	-->
+
+	<script>feather.replace()</script>
+</body>
+</html>--}}
+
+{{#> layouts/app page-title="Plans" test="test"}}
+{{/layouts/app}}

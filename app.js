@@ -6,7 +6,7 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars');
+var handlebars = require('express-handlebars');
 
 var hdbHelpers = require('./helpers/handlebars.js')(handlebars);
 
@@ -22,7 +22,7 @@ var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname, 'views/pages/'));
 app.engine('handlebars', hdbHelpers.engine);
 app.set('view engine', 'handlebars');
 app.use(express.favicon());
