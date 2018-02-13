@@ -3,22 +3,22 @@
     {
       "title": "Plans",
       "link": "/plans",
-      "icon": "globe.svg"
+      "icon": "globe"
     },
     {
       "title": "Events",
       "link": "/events",
-      "icon": "calendar.svg"
+      "icon": "calendar"
     },
     {
       "title": "Groups",
       "link": "/groups",
-      "icon": "users.svg"
+      "icon": "users"
     },
     {
       "title": "Settings",
       "link": "/settings",
-      "icon": "settings.svg"
+      "icon": "settings"
     }
   ],
   "groups": [
