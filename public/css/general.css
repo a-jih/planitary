@@ -32,3 +32,33 @@
   padding-top: 1rem;
   padding-bottom: 10rem;
 }
+
+/* Adding info for the profile page */ 
+
+.boxed {
+  background: #D8D8D8;
+  border: 1px solid #979797;
+  border-radius: 17px;
+  height: 89px;
+  width: 539px;
+  position: fixed;
+  left: 20%;
+}
+.boxed p{
+font-family: Roboto-Regular;
+font-size: 40px;
+color: #FF8C00;
+position: relative;
+left: 36%;
+top:18%;
+}
+.userinfo h2{
+  position: relative;
+  left:44%;
+}
+hr.style1{
+  position: relative;
+  top: 25%;
+  border-style: solid; 
+  border-color: #8c8b8b; 
+}
