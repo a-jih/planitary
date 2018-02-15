@@ -1,0 +1,33 @@
+{{!-- layout/group-suggestions --}}
+
+<div class="grpplans">
+  <header>
+    <h2>{{name}}</h2>
+  </header>
+  <div class="carousel">
+    <div class="carousel-fade"></div>
+    <div class="carousel-wrapper">
+      <div>
+        <ol class="carousel-content">
+          <!-- Suggested Plans -->
+          {{#each plans}}
+          <li>
+            <a href="#">
+              <div class="plan">
+                <header>
+                  <h3>{{month}} {{day}}</h3>
+                </header>
+                <div class="plan-body">
+                  <p class="plan-range">{{start}} - {{end}}</p>
+                  <p class="plan-avail">{{friends.length}} friends available</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          {{/each}}
+        </ol>
+      </div>
+
+    </div>
+  </div>
+</div>

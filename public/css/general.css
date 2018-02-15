@@ -1,3 +1,7 @@
+body {
+  background-color: #efefff;
+}
+
 #app-nav {
   position: fixed;
   bottom: 0;
@@ -5,6 +9,7 @@
   right: 0;
   z-index: 100000;
   background-color: lightcyan;
+  box-shadow: 0 0 0.1rem 0 rgba(0,0,0,0.2);
 }
 
 #app-header {
@@ -17,7 +22,7 @@
   z-index: 10000;
   line-height: 4rem;
   background-color: lightcyan;
-  box-shadow: 0 0 0.1rem 0 rgba(0,0,0,0.1);
+  box-shadow: 0 0 0.1rem 0 rgba(0,0,0,0.2);
 }
 
 .app-title {
@@ -28,7 +33,6 @@
 }
 
 #app-content {
-  margin-top: 4rem;
-  padding-top: 1rem;
-  padding-bottom: 10rem;
+  margin: 4rem 0;
+  padding: 0.7rem 0.5rem;
 }

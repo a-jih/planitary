@@ -31,6 +31,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Monday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["0", "1", "2"]
         },
         {
@@ -38,6 +40,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Thursday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["0", "1"]
         },
         {
@@ -45,6 +49,8 @@
           "month": "March",
           "year": "2017",
           "weekday": "Thursday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["2", "1"]
         }
       ]
@@ -58,6 +64,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Monday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["0", "1", "2"]
         },
         {
@@ -65,6 +73,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Thursday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["0", "1"]
         },
         {
@@ -72,6 +82,8 @@
           "month": "March",
           "year": "2017",
           "weekday": "Thursday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["2", "1"]
         }
       ]
@@ -85,6 +97,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Monday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["0", "1", "2"]
         },
         {
@@ -92,6 +106,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Thursday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["0", "1"]
         },
         {
@@ -99,6 +115,8 @@
           "month": "March",
           "year": "2017",
           "weekday": "Thursday",
+          "start": "3PM",
+          "end": "4PM",
           "friends": ["2", "1"]
         }
       ]

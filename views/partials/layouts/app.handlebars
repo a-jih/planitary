@@ -5,6 +5,7 @@
   {{#*inline "head-block"}}
   <link rel="stylesheet" type="text/css" href="/css/general.css">
   <link rel="stylesheet" type="text/css" href="/css/navbar.css">
+  <link rel="stylesheet" type="text/css" href="/css/group-plans.css">
   {{/inline}}
 
   {{!-- App Header --}}
@@ -14,6 +15,13 @@
     {{/if}}
     <p class="app-title">Planitary</p>
   </header>
+  {{/inline}}
+
+  {{#*inline "main-block"}}
+    <main id="app-content">
+      {{#> app-content}}
+      {{/app-content}}
+    </main>
   {{/inline}}
 
   {{!-- App Footer --}}
