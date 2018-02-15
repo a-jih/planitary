@@ -1,10 +1,23 @@
-<html>
-<head>
-	<title>Planitary</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<a href="/plans">Log In</a>
-	<a href="/signup">Sign Up</a>
-</body>
-</html>
+{{#> layouts/base title="Login"}}
+
+{{#*inline "head-block"}}
+<link rel="stylesheet" type="text/css" href="/css/login.css">
+<script type="text/javascript" src="/js/index.js"></script>
+
+	<h1>Planitary</h1>
+	<div id="rect"></div>
+
+{{/inline}}
+{{#*inline "main-block"}}
+	<section class="Wizard of Oz">
+  		<h2>Login To Your Account</h2>
+  		<p class="valid">Valid. Please wait a moment.</p>
+ 		<p class="error">Error. Please enter correct Username &amp; password.</p>
+ 		<form class="loginbox" autocomplete="off">
+   			Username:<input placeholder="cogs120" type="text" id="username"></input><br>
+    		Password:<input placeholder="planitary" type="password" id="password"></input><br>
+			<button id="submit">Login</button>
+		</form>
+	</section>
+{{/inline}}
+{{/layouts/base}}
