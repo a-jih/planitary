@@ -1,26 +1,8 @@
-<html>
-<head>
-	<title>Events | Planitary</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<header>
-		<a href="#" style="visibility:hidden">Back</a>
-		<h1>Planitary</h1>
-		<a href="/">Log Out</a>
-	</header>
-	<main>
-		<h2>Events</h2>
-	</main>
-	<footer>
-		<nav>
-			{{#each pages}}
-			<a href="{{link}}">
-				<img src="/icons/{{icon}}" alt="{{title}} Page">
-				<p>{{title}}</p>
-			</a>
-			{{/each}}
-		</nav>
-	</footer>
-</body>
-</html>
+{{!-- pages/events --}}
+
+{{#> layouts/app page-title="Events"}}
+
+	{{#*inline "main-block"}}
+	{{/inline}}
+
+{{/layouts/app}}

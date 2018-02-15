@@ -1,56 +1,18 @@
-<html>
+{{!-- pages/groups --}}
 
-<head>
-	<title>Groups | Planitary</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/plans.css">
-	<link rel="stylesheet" type="text/css" href="/css/navbar.css">
-</head>
+{{#> layouts/app page-title="Groups"}}
 
-<body>
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="/css/groups.css">
+	{{/inline}}
 
-	<!-- App Header -->
-	<header id="app-header">
-		<p id="app-title">Planitary</p>
-	</header>
-
-	<!-- App Main Content -->
-	<main id="app-content" class="container-fluid">
-		<h2>Groups</h2>
-
+	{{#*inline "main-block"}}
+	<div class="grplist">
+		<h2>My Groups</h2>
 		{{#each groups}}
-		<a class="group-card" href="/groupInfo">
-			<div class="card">
-				<div class="card-body">
-					<p class="card-title">
-						{{name}}
-					</p>
-					<p class="card-text">
-						{{members.length}} members
-					</p>
-				</div>
-			</div>
-		</a>
+			{{>includes/group-listitem}}
 		{{/each}}
+	</div>
+	{{/inline}}
 
-		<!-- Add Group -->
-		<button type="button" class="add-group">
-			<img src="/icons/plus.svg">
-		</button>
-	</main>
-
-	<!-- App Navigation -->
-	<footer id="app-nav">
-		<nav class="navbar">
-			{{#each pages}}
-			<a href="{{link}}">
-				<img src="/icons/{{icon}}" alt="{{title}} Page">
-				<p>{{title}}</p>
-			</a>
-			{{/each}}
-		</nav>
-	</footer>
-</body>
-
-</html>
+{{/layouts/app}}

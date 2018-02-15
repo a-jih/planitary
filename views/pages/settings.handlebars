@@ -1,60 +1,72 @@
-<!--
-<html>
-<head>
-	<title>Settings | Planitary</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<header>
-		<a href="#" style="visibility:hidden">Back</a>
-		<h1>Planitary</h1>
-		<a href="/">Log Out</a>
-	</header>
-	<main>
-		<h2>Settings</h2>
-	</main>
-	<footer>
-		<nav>
-			{{#each pages}}
-			<a href="{{link}}">
-				<img src="/icons/{{icon}}" alt="{{title}} Page">
-				<p>{{title}}</p>
-			</a>
-			{{/each}}
-		</nav>
-	</footer>
-</body>
-</html> -->
 {{#> layouts/app page-title="Profile"}}
+	{{#*inline "head-block"}}
+	{{!--<link rel="stylesheet" type="text/css" href="/css/login.css">--}}
+	<script type="text/javascript" src="/js/index.js"></script>
+	{{/inline}}
 
-{{#*inline "head-block"}}
-<link rel="stylesheet" type="text/css" href="/css/login.css">
-<script type="text/javascript" src="/js/index.js"></script>
+	{{#*inline "main-block"}}
 
-{{/inline}}
-{{#*inline "main-block"}}
-<main id="app-content">
-	<!-- Username Form --> 
-<div class="userinfo">
-	<h2> Username </h2>
-	<div class="boxed">
-		<p> cogs120 </p>
-		<hr class="style1">
+
+	<div>
+		<header>
+			<h2>Security Settings</h2>
+		</header>
+		<section>
+			<form>
+				<h3>Password</h3>
+				<p class="form-group">
+					<label for="ch-password">New Password</label>
+					<input class="form-control" type="password" name="ch-password" id="ch-password" placeholder="New Password" required>
+				</p>
+				<p class="form-group">
+					<label for="ch-password-confirm">Confirm Password</label>
+					<input class="form-control" type="password" name="ch-password-confirm" id="ch-password-confirm" placeholder="Confirm Password" required>
+				</p>
+				<input class="btn" type="button" id="new-password-submit" value="Change Password">
+			</form>
+		</section>
 	</div>
-</div>
-	<!-- Change Password -->
-<div class="boxed2">
+
+	<div>
+		<header>
+			<h2>Calendar Settings</h2>
+		</header>
+		<section>
+			<form>
+				<h3>Add Calendar</h3>
+				<p class="form-group">
+					<label for="calendar">iCal File</label>
+					<input class="form-control-file" type="file" name="calendar" id="calendar">
+				</p>
+			</form>
+		</section>
+	</div>
+
+
+
+<!--
+	{{!-- Username Form --}}
+	<div class="userinfo">
+		<h2> Username </h2>
+		<div class="boxed">
+			<p> cogs120 </p>
+			<hr class="style1">
+		</div>
+	</div>
+	{{!-- Change Password --}}
+	<div class="boxed2">
 		<a href="/">Change Password</a>
 		<hr class="style2">
-</div>
-	<!-- Remove from Group -->
-<div class="boxed3">
-	<h2> Remove a group </h2>
-	<!-- Each Block -->
-	{{#each groups}}
-	<li>{{name}}</li>
-	{{/each}}
-</div>
-</main>
-{{/inline}}
+	</div>
+	{{!-- Remove from Group --}}
+	<div class="boxed3">
+		<h2> Remove a group </h2>
+		{{!-- Each Block --}}
+		{{#each groups}}
+		<li>{{name}}</li>
+		{{/each}}
+	</div>-->
+
+	{{/inline}}
+
 {{/layouts/app}}  

@@ -6,6 +6,11 @@
   <link rel="stylesheet" type="text/css" href="/css/general.css">
   <link rel="stylesheet" type="text/css" href="/css/navbar.css">
   <link rel="stylesheet" type="text/css" href="/css/group-plans.css">
+
+    {{#> head-block}}
+      {{!-- App page specific head content --}}
+    {{/head-block}}
+
   {{/inline}}
 
   {{!-- App Header --}}
@@ -19,8 +24,9 @@
 
   {{#*inline "main-block"}}
     <main id="app-content">
-      {{#> app-content}}
-      {{/app-content}}
+      {{#> main-block}}
+        {{!-- App page specific main content --}}
+      {{/main-block}}
     </main>
   {{/inline}}
 
