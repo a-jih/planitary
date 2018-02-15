@@ -11,13 +11,30 @@
 }
 
 .eventlist>div {
-   /* border-top: 1px solid rgba(0,0,0,0.1); */
-    padding: 0.2rem .5rem;
+    /* border-top: 1px solid rgba(0,0,0,0.1); 
+   /* padding: 0.2rem .5rem; */
+   text-align: left;
+   text-indent: 5%;
 }
 
 .eventlist>header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7rem 1rem;
+    margin-top: 5%;
+    text-align: left;
+    text-indent: 5%;
+}
+
+.eventlist .info
+{
+    background-color: #fff;
+    font-size: 25px;
+    text-align: left;
+    text-indent: 5%;
+}
+.eventlist .members
+{
+    text-align: right;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    font-family: Roboto-Thin;
+    font-size: 25px;
 }
