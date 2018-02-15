@@ -34,6 +34,7 @@
           "start": "3:00",
           "end": "4:45PM",
           "friends": ["0", "1", "2"]
+          
         },
         {
           "day": "15",
@@ -42,7 +43,8 @@
           "weekday": "Thursday",
           "start": "11:00",
           "end": "11:30AM",
-          "friends": ["0", "1"]
+          "friends": ["0", "1"],
+          "title": "Study Jam"
         },
         {
           "day": "23",
@@ -66,7 +68,8 @@
           "weekday": "Monday",
           "start": "3PM",
           "end": "4PM",
-          "friends": ["0", "1", "2"]
+          "friends": ["0", "1", "2"],
+          "title": "Pottery Making Session"
         },
         {
           "day": "15",
@@ -117,7 +120,8 @@
           "weekday": "Thursday",
           "start": "3PM",
           "end": "4PM",
-          "friends": ["2", "1"]
+          "friends": ["2", "1"],
+          "title": "RHCP Concert"
         }
       ]
     }

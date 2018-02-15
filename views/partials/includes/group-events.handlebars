@@ -1,0 +1,14 @@
+{{!-- Layout for the Events page --}}
+
+<div class="eventlist">
+    {{#each plans}}
+    <header>
+        <h4>{{title}}</h4>
+    </header>
+    <div>
+        {{#if title}}
+        {{friends.length}} members
+        {{/if}}
+    </div>
+    {{/each}}
+</div>

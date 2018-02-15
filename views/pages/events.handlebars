@@ -2,7 +2,19 @@
 
 {{#> layouts/app page-title="Events"}}
 
+	{{!-- Going to add css to head block later --}}
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="/css/events.css">
+	{{/inline}}
+
+	{{!-- The main block for content --}}
 	{{#*inline "main-block"}}
+	<div class="planlist">
+		<h2>My Plans</h2>
+		{{#each groups}}
+			{{> includes/group-events}}
+		{{/each}}
+	</div>
 	{{/inline}}
 
 {{/layouts/app}}
