@@ -1,9 +1,5 @@
 {{!-- layout/group-suggestions --}}
 
-<div class="grpplans">
-  <header>
-    <h3>{{name}}</h3>
-  </header>
   <div class="carousel">
     <div class="carousel-wrapper">
       <div>
@@ -11,7 +7,7 @@
           <!-- Suggested Plans -->
           {{#each plans}}
           <li>
-            <a href="#">
+            <a href="/eventCreation">
               <div class="plan">
                 <header>
                   <h6>{{month}} {{day}}</h6>
@@ -26,7 +22,5 @@
           {{/each}}
         </ol>
       </div>
-
     </div>
   </div>
-</div>

@@ -3,8 +3,16 @@
 {{#> layouts/app page-title="Plans"}}
 
 	{{#*inline "main-block"}}
+
 		{{#each groups}}
-			{{> includes/group-plans}}
+			<div class="grpplans">
+				<header>
+    			<h3>{{name}}</h3>
+  			</header>
+				<div>
+				{{> includes/group-plans}}
+				</div>
+			</div>
 		{{/each}}
 	{{/inline}}
 

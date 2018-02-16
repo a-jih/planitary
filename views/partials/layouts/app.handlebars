@@ -18,12 +18,14 @@
   <header id="app-header">
     <div>
       {{#if back-page}}
-      <a class="back-button" href="{{back-url}}">
+      <a class="back-button" href="javascript:history.back()">
         <i style="width:1rem;height:1rem" data-feather="arrow-left"></i>
-        {{back-page}}
+        Back
       </a>
       {{/if}}
-      <p class="app-title">Planitary</p>
+      <p class="app-title">
+        {{#if sub-title}}{{sub-title}}{{else}}{{#if title}}{{title}}{{/if}}{{/if}}
+      </p>
     </div>
   </header>
   {{/inline}}
