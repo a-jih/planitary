@@ -70,7 +70,7 @@
           "weekday": "Monday",
           "start": "3:00PM",
           "end": "4:00PM",
-          "friends": ["0", "1", "2"],
+          "friends": ["0", "1"],
           "title": "Pottery Making Session"
         },
         {
