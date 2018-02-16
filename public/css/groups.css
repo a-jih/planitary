@@ -1,3 +1,15 @@
+.titles a{
+    color:#FF8C00;
+}
+.titles h2{
+    text-align: center;
+    color: #FF8C00;
+}
+.titles hr{
+    text-align: center;
+    border-color: #FF8C00;
+    border-width: 2px;
+}
 .grplist {
   margin: 0 -0.5rem;
   padding: 1rem;

@@ -12,6 +12,7 @@ exports.view = function(req, res) {
   console.log(data.groups[groupid]);
   var renderData = {
     "group": data.groups[groupid],
+    "friends": data.friends,
     "pages": data.pages
   };
 
