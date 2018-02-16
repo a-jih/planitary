@@ -6,5 +6,11 @@
 var data = require('../data.json');
 
 exports.view = function(req, res){
-  res.render('groupInfo', data);
+  var groupname = req.params.groupname;
+
+  var groupinfo = data.groups.find(function(group) {
+    return group.name == groupname;
+  });
+
+  res.render('groupInfo', groupinfo);
 };

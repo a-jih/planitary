@@ -46,9 +46,9 @@ app.get('/', index.view);
 app.get('/plans', plans.view);
 app.get('/events', events.view);
 app.get('/groups', groups.view);
+app.get('/groups/:groupname', grpInfo.view);
 app.get('/settings', settings.view);
 app.get('/eventCreation', addEvent.view);
-app.get('/groupInfo', grpInfo.view);
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){

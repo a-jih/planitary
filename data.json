@@ -126,22 +126,18 @@
       ]
     }
   ],
-  "friends": [
-    {
-      "name": "Bobby D",
-      "id": "0"
+  "friends": {
+    "0": {
+      "name": "Bobby D"
     },
-    {
-      "name": "Chucky C",
-      "id": "1"
+    "1": {
+      "name": "Chucky C"
     },
-    {
-      "name": "Tommy T",
-      "id": "2"
+    "2": {
+      "name": "Tommy T"
     },
-    {
-      "name": "Robby R",
-      "id": "3"
+    "3": {
+      "name": "Robby R"
     }
-  ]
+  }
 }
