@@ -1,26 +1,32 @@
-<html>
-<head>
-	<title>New Event | Planitary</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<header>
-		<a href="#">Back</a>
-		<h1>Planitary</h1>
-		<a href="/">Log Out</a>
-	</header>
-	<main>
-		<h2>Event Creation</h2>
-	</main>
-	<footer>
-		<nav>
-			{{#each pages}}
-			<a href="{{link}}">
-				<img src="/icons/{{icon}}" alt="{{title}} Page">
-				<p>{{title}}</p>
-			</a>
-			{{/each}}
-		</nav>
-	</footer>
-</body>
-</html>
+{{#> layouts/app page-title="Events"}}
+
+	{{!-- Going to add css to head block later --}}
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="/css/createEvent.css">
+	{{/inline}}
+
+	{{!-- The main block for content --}}
+	{{#*inline "main-block"}}
+	
+	{{!-- Upper Titles --}}
+	<div class="titles">
+		<a href="javascript:history.back()">Back</a>
+		<h2>Create an Event</h2>
+		<hr> 
+	</div>
+
+	{{!-- Form Creation --}}
+	<form class="loginbox" autocomplete="off">
+   		<input placeholder="Name" type="text" id="title"></input><br>
+    	<input placeholder="Day" type="text" id="Day"></input><br>
+		<input placeholder="Time" type="text" id="start"></input><br>
+    	<input placeholder="Location" type="text" id="location"></input><br>
+		<input placeholder="Description" type="text" id="description"></input><br>
+    	<input placeholder="Group" type="text" id="group"></input><br>
+		<button id="planit">
+			<a href="/events">Planit</a>
+		</button>
+	</form>
+	{{/inline}}
+
+{{/layouts/app}}
