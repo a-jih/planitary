@@ -41,7 +41,7 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Thursday",
-          "start": "11:00",
+          "start": "11:00AM",
           "end": "11:30AM",
           "friends": ["0", "1"],
           "title": "Study Jam"
@@ -66,8 +66,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Monday",
-          "start": "3PM",
-          "end": "4PM",
+          "start": "3:00PM",
+          "end": "4:00PM",
           "friends": ["0", "1", "2"],
           "title": "Pottery Making Session"
         },
@@ -76,8 +76,8 @@
           "month": "Febuary",
           "year": "2017",
           "weekday": "Thursday",
-          "start": "3PM",
-          "end": "4PM",
+          "start": "3:00PM",
+          "end": "4:00PM",
           "friends": ["0", "1"]
         },
         {
@@ -118,8 +118,8 @@
           "month": "March",
           "year": "2017",
           "weekday": "Thursday",
-          "start": "3PM",
-          "end": "4PM",
+          "start": "3:00PM",
+          "end": "4:00PM",
           "friends": ["2", "1"],
           "title": "RHCP Concert"
         }
