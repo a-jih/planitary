@@ -75,7 +75,14 @@ form button {
   font-weight: 400;
   background-color: #FF8C00;
 }
-
+.form-control-file{
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
 .error,
 .valid {
   display: none;
