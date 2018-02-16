@@ -17,12 +17,17 @@
 
 	{{!-- Form Creation --}}
 	<form class="loginbox" autocomplete="off">
+   		<select class="form-control" id="group">
+      		<option value="" disabled selected>Click here to select a group</option>
+      		<option>CSE120</option>
+      		<option>Squad</option>
+      		<option>Lorem Ipsum</option>
+    	</select><br>
    		<input placeholder="Name" type="text" id="title"></input><br>
     	<input placeholder="Day" type="text" id="Day"></input><br>
-		<input placeholder="Time" type="text" id="start"></input><br>
+		<input placeholder="Time" type="texform-controlt" id="start"></input><br>
     	<input placeholder="Location" type="text" id="location"></input><br>
 		<input placeholder="Description" type="text" id="description"></input><br>
-    	<input placeholder="Group" type="text" id="group"></input><br>
 		<button id="planit">
 			<a href="/events">Planit</a>
 		</button>
