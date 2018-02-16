@@ -9,15 +9,18 @@
 
 	{{!-- The main block for content --}}
 	{{#*inline "main-block"}}
-	<div class="planlist">
+	<div class="content-card">
 		<div class="fab"> 
 			<a href="/eventCreation">
 				<i data-feather="plus"></i> 
 			</a>
 		</div>
-		{{#each groups}}
-			{{> includes/group-events}}
-		{{/each}}
+
+		<div class="content-card-body">
+			{{#each groups}}
+				{{> includes/group-events}}
+			{{/each}}
+		</div>
 	</div>
 	{{/inline}}
 

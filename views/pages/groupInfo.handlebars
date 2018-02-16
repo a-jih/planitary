@@ -1,13 +1,29 @@
-{{#> layouts/app page-title="Groups" sub=group.name back-page="Groups"}}
+{{#> layouts/app page-title="Groups" sub=name back-page="Groups"}}
 
-	{{#*inline "main-block"}}
+	{{#*inline "head-block"}}
 	<link rel="stylesheet" type="text/css" href="/css/groups.css">
 	{{/inline}}
+
 	{{#*inline "main-block"}}
-	<div class= "titles">
-		<a href="javascript:history.back()">Back</a>
-		<h2>Group Info</h2>
-		<hr> 
-	</div>
+		<div class="content-card">
+			<header>
+				<h3>Suggested Plans</h3>
+			</header>
+			<div>
+				{{> includes/group-plans}}
+			</div>
+		</div>
+
+		<div class="content-card">
+			<header>
+				<h3>Members</h3>
+			</header>
+			<div class="content-card-body memberlist">
+				{{#each memberinfo}}
+					<p>{{name}}</p>
+				{{/each}}
+			</div>
+		</div>
+	{{/inline}}
 
 {{/layouts/app}}

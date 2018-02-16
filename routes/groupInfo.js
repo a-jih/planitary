@@ -9,11 +9,17 @@ exports.view = function(req, res) {
 
   var groupid = String(req.params.groupid);
 
-  console.log(data.groups[groupid]);
-  var renderData = {
-    "group": data.groups[groupid],
-    "pages": data.pages
-  };
+  var groupdata = data.groups[groupid];
 
-  res.render('groupInfo', renderData);
+  groupdata["memberinfo"] = {}
+
+  groupdata.members.forEach(function(element) {
+    groupdata.memberinfo[element] = (data.friends[element]);
+  });
+
+  groupdata["pages"] = data.pages;
+
+  console.log(groupdata);
+
+  res.render('groupInfo', groupdata);
 };
