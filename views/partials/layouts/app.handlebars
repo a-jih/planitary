@@ -1,6 +1,6 @@
 {{!-- layouts/app.handlebars --}}
 
-{{#> layouts/base title=page-title}}
+{{#> layouts/base title=page-title sub-title=sub}}
 
   {{#*inline "head-block"}}
   <link rel="stylesheet" type="text/css" href="/css/general.css">
@@ -16,9 +16,15 @@
   {{!-- App Header --}}
   {{#*inline "header-block"}}
   <header id="app-header">
-    {{#if back-button}}
-    {{/if}}
-    <p class="app-title">Planitary</p>
+    <div>
+      {{#if back-page}}
+      <a class="back-button" href="{{back-url}}">
+        <i style="width:1rem;height:1rem" data-feather="arrow-left"></i>
+        {{back-page}}
+      </a>
+      {{/if}}
+      <p class="app-title">Planitary</p>
+    </div>
   </header>
   {{/inline}}
 

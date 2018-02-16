@@ -5,12 +5,15 @@
 
 var data = require('../data.json');
 
-exports.view = function(req, res){
-  var groupname = req.params.groupname;
+exports.view = function(req, res) {
 
-  var groupinfo = data.groups.find(function(group) {
-    return group.name == groupname;
-  });
+  var groupid = String(req.params.groupid);
 
-  res.render('groupInfo', groupinfo);
+  console.log(data.groups[groupid]);
+  var renderData = {
+    "group": data.groups[groupid],
+    "pages": data.pages
+  };
+
+  res.render('groupInfo', renderData);
 };

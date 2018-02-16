@@ -14,6 +14,7 @@ body {
 
 #app-header {
   position: fixed;
+  justify-content: center;
   top: 0;
   left: 0;
   right: 0;
@@ -23,6 +24,10 @@ body {
   line-height: 4rem;
   background-color: lightcyan;
   box-shadow: 0 0 0.1rem 0 rgba(0,0,0,0.2);
+}
+
+#app-header>div {
+  position: relative;
 }
 
 .app-title {
@@ -108,9 +113,17 @@ top:20%;
 }
 .boxed3 li{
   position: relative;
-  top:20%;
+  top: 20%;
   font-family: Roboto-Regular;
   font-size: 25px;
   list-style:none;
   text-align:center;
+}
+
+.back-button {
+  position: absolute;
+  float: left;
+  display: flex;
+  align-items: center;
+  font-size: 0.7rem;
 }

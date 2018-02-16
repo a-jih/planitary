@@ -21,8 +21,9 @@
       "icon": "settings"
     }
   ],
-  "groups": [
-    {
+  "groups": {
+    "0": {
+      "id": "0",
       "name": "CSE120",
       "members": ["0", "1", "2"],
       "plans": [
@@ -57,7 +58,8 @@
         }
       ]
     },
-    {
+    "1": {
+      "id": "1",
       "name": "Squad",
       "members": ["3", "1"],
       "plans": [
@@ -91,7 +93,8 @@
         }
       ]
     },
-    {
+    "2": {
+      "id": "2",
       "name": "Lorem ipsum",
       "members": ["0", "1", "2", "3"],
       "plans": [
@@ -125,7 +128,7 @@
         }
       ]
     }
-  ],
+  },
   "friends": {
     "0": {
       "name": "Bobby D"
