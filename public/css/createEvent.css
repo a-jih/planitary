@@ -1,0 +1,16 @@
+.titles a{
+    color:#FF8C00;
+}
+.titles h2{
+    text-align: center;
+    color: #FF8C00;
+}
+.titles hr{
+    text-align: center;
+    border-color: #FF8C00;
+    border-width: 2px;
+}
+
+body{
+    background-image: radial-gradient(50% 0%, #404040 20%, #404040 100%);
+}
