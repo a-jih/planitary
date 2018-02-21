@@ -14,7 +14,6 @@
 body{
     background-image: radial-gradient(50% 0%, #404040 20%, #404040 100%);
 }
-
 form {
     /*display: inline-block;
     border-radius: 25px;
@@ -26,6 +25,10 @@ form {
     text-align: center;
     font-size: 20px;
     color: #404040;
+  }
+  form select
+  {
+      text-align: center;
   }
   form #description 
   {
@@ -74,3 +77,10 @@ form {
   form button a{
       color:white;
   }
+.b {
+        display: inline-block;
+        position: relative;
+        margin: 2%;
+        width: 35%;
+        color: white;
+    }
