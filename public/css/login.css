@@ -12,6 +12,12 @@ body {
 
 /* top */
 
+.butns{
+
+  margin:auto 0;
+  text-align: center;
+  
+}
 h1 {
   position: relative;
   text-align: center;
@@ -24,11 +30,6 @@ h1 {
 }
 
 form {
-  /*display: inline-block;
-  border-radius: 25px;
-  width: 100%;
-  padding: 40px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);*/
   margin-top: 45%;
   background-image: transparent;
   text-align: center;
