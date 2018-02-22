@@ -1,14 +1,13 @@
 {{!-- Layout for the Events page --}}
 
 <div class="eventlist">
-	{{#each plans}}
+	{{#each events}}
 
 	<header>
 		<h3>{{title}}</h3>
 	</header>
 
 	<div>
-		{{#if title}}
 		<header>
 			<h6> {{month}} {{day}}</h6>
 		</header>
@@ -18,7 +17,6 @@
 		<div class="members">
 			{{friends.length}} members
 		</div>
-		{{/if}}
 	</div>
 	
 	{{/each}}

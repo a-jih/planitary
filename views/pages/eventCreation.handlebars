@@ -9,40 +9,39 @@
 
 	{{#*inline "main-block"}}
 	{{!-- Form Creation --}}
-	<br>
-	<form id = "myForm" class="myForm" autocomplete="off" method="post">
-		<select class="form-control" id="group">
-			<option disabled selected>Select a group</option>
-			{{#each groups}}
-			<option value="{{name}}">{{name}}</option>
-			{{/each}}
-		</select>
-		<br>
-		<p>
-			<input class="form-control" for="name" placeholder="Name" type="text" id="title"></input>
+	<form id = "myForm" class="myForm content-card" autocomplete="off" method="post">
+		<p class="form-group">
+			<label for="group">Group</label>
+			<select class="form-control" id="group">
+				<option disabled selected>Select a group</option>
+				{{#each groups}}
+				<option value="{{name}}">{{name}}</option>
+				{{/each}}
+			</select>
 		</p>
-		<p>
-			<input class="form-control" placeholder="Day" type="text" id="Day"></input>
+		<p class="form-group">
+			<label for="title">Title</label>
+			<input class="form-control" type="text" name="title" id="title" placeholder="Name"></input>
 		</p>
-		<div class = "b">
-			 <p>
+		<p class="form-group">
+			<label for="Day">Date</label>
+			<input class="form-control" type="date" name="Day" id="Day" placeholder="Day"></input>
+		</p>
+		<div class="form-row">
+			<p class="form-group col">
 				<label for="start">Start Time</label>
-				<input type = "time" name="start" class = "form-control" placeholder="Start Time" type="text" id="start"></input>
+				<input type="time" name="start" class="form-control" placeholder="Start Time" type="text" id="start"></input>
 			</p>
-		</div>
-		<div class = "b">
-			<p>
+			<p class="form-group col">
 				<label for="end">End Time</label>
-				<input type = "time" name="end" class = "form-control" placeholder="End Time" type="text" id="start"></input>
+				<input type="time" name="end" class="form-control" placeholder="End Time" type="text" id="start"></input>
 			</p>
 		</div>
-		<p>
-			<input class="form-control" placeholder="Description" type="text" id="description"></input>
+		<p class="form-group">
+			<label for="description">Description</label>
+			<textarea class="form-control" name="description" placeholder="Description" type="text" id="description"></textarea>
 		</p>
-		<input class="btn" id="btn" type="submit">
-			<!--<a href="/plans" >Planit</a>-->
-			Planit
-		</input>
+		<input class="btn btn-primary btn-block" id="btn" type="submit" value="Planit"></input>
 	</form>
 	{{/inline}}
 
