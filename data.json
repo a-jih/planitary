@@ -1,8 +1,8 @@
 {
   "pages": [
     {
-      "title": "Plans",
-      "link": "/plans",
+      "title": "Plan It",
+      "link": "/planit",
       "icon": "globe"
     },
     {

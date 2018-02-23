@@ -9,11 +9,7 @@
 
 	{{!-- The main block for content --}}
 	{{#*inline "main-block"}}
-	<div class="fab"> 
-		<a href="/eventCreation">
-			<i data-feather="plus"></i> 
-		</a>
-	</div>
+	{{> includes/fab page="eventCreation"}}
 	<div class="content-card">
 		<div class="content-card-body">
 			{{#each groups}}

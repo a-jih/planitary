@@ -12,7 +12,7 @@ var fs = require('fs');
 var hdbHelpers = require('./helpers/handlebars.js')(handlebars);
 
 var index    = require('./routes/index');
-var plans    = require('./routes/plans');
+var planit   = require('./routes/planit');
 var events   = require('./routes/events');
 var groups   = require('./routes/groups');
 var settings = require('./routes/settings');
@@ -44,14 +44,14 @@ if ('development' == app.get('env')) {
 
 // Get views
 app.get('/', index.view);
-app.get('/plans', plans.view);
+app.get('/planit', planit.view);
 app.get('/events', events.view);
 app.get('/groups', groups.view);
 app.get('/groups/:groupid', grpInfo.view);
 app.get('/settings', settings.view);
 app.get('/eventCreation', addEvent.view);
 app.get('/joingroup/:groupid', grpInfo.join);
-app.get('/create', addEvent.create);
+app.post('/create', addEvent.create);
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){

@@ -10,7 +10,7 @@ $(document).ready(function() {
   
         if (ValidEmail === true && ValidPassword === true) { // if ValidEmail & ValidPassword
             $('.valid').css('display', 'block');
-            window.location.href = "/plans"; // go to home.html
+            window.location.href = "/planit"; // go to home.html
         }
         else {
             $('.error').css('display', 'block'); // show error msg
