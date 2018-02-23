@@ -30,10 +30,14 @@
       [
         {
           "title":"Studio",
-          "date": "24th January 2018",
+          "day": "24",
+          "month": "Febuary",
+          "year": "2017",
+          "weekday": "Tuesday",
           "startt" : "3:00 PM",
           "endt": "4:00 PM",
-          "description": "Lots of New Assignments"
+          "description": "Lots of New Assignments",
+          "friends": ["0", "1"]
         }
       ],
       "plans": [

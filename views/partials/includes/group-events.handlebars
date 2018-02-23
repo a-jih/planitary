@@ -1,23 +1,20 @@
 {{!-- Layout for the Events page --}}
-
-<div class="eventlist">
-	{{#each events}}
-
+<div class="event">
 	<header>
 		<h3>{{title}}</h3>
 	</header>
 
-	<div>
-		<header>
-			<h6> {{month}} {{day}}</h6>
-		</header>
-		<div class="info">
-			<p> {{start}} - {{end}}</p>
+	<div class="eventinfo">
+		<div class="eventinfo-time">
+			<p class="eventinfo-date">{{month}} {{day}}</p>
+			<p class="eventinfo-range"> {{startt}} - {{endt}}</p>
 		</div>
-		<div class="members">
-			{{friends.length}} members
+		<div class="eventinfo-description">
+			<h6>Description:</h6>
+			<p>{{description}}</p>
+		</div>
+		<div class="eventinfo-going">
+			{{friends.length}} members going
 		</div>
 	</div>
-	
-	{{/each}}
 </div>

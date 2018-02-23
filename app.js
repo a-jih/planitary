@@ -7,6 +7,7 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var handlebars = require('express-handlebars');
+var fs = require('fs');
 
 var hdbHelpers = require('./helpers/handlebars.js')(handlebars);
 

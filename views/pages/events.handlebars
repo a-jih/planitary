@@ -17,7 +17,9 @@
 	<div class="content-card">
 		<div class="content-card-body">
 			{{#each groups}}
-				{{> includes/group-events}}
+				{{#each events}}
+					{{> includes/group-events}}
+				{{/each}}
 			{{/each}}
 		</div>
 	</div>
