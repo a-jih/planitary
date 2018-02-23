@@ -50,6 +50,7 @@ app.get('/groups', groups.view);
 app.get('/groups/:groupid', grpInfo.view);
 app.get('/settings', settings.view);
 app.get('/eventCreation', addEvent.view);
+app.get('/joingroup/:groupid', grpInfo.join)
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){

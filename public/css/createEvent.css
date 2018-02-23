@@ -18,37 +18,13 @@ body {
 }
 
 form {
-    /*display: inline-block;
-    border-radius: 25px;
-    width: 100%;
-    padding: 40px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);*/
     margin-top: 10%;
     background-image: transparent;
     padding: 1rem;
-    -text-align: center;
-    -font-size: 20px;
     color: #404040;
-}
-
-/*
-form select {
-    text-align: center;
-}
-*/
-form -#description {
-    background-image: transparent;
-    text-align: center;
-    font-size: 20px;
-    color: #404040;
-    padding-bottom: 10%;
 }
 
 form input {
-    /*outline: none;
-    display: block;*/
-    
-    -width: 80%;
     margin: 0 0 20px;
     padding: 10px 15px;
     border: .5px solid transparent;
@@ -57,13 +33,9 @@ form input {
     box-sizing: border-box;
     font-size: 18px;
     font-weight: 400;
-    -text-align: center;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     transition: 0.2s linear;
-    /*&input:focus {
-          color: #333;
-          border: 1px solid #44c4e7; */
 }
 
 form button {
@@ -73,9 +45,6 @@ form button {
     width: 60%;
     padding: 10px;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    /*background-image: linear-gradient(-180deg, invalid gradient);
-    cursor: pointer;*/
-    -background: #44c4e7;
     color: white;
     font-size: 30px;
     font-weight: 400;
@@ -86,5 +55,4 @@ form button {
 .b {
     display: inline-block;
     position: relative;
-    -color: white;
 }

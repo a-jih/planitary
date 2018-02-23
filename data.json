@@ -24,10 +24,10 @@
   "groups": {
     "0": {
       "id": "0",
-      "name": "CSE120",
+      "name": "COGS120",
+      "joined": true,
       "members": ["0", "1", "2"],
-      "events":
-      [
+      "events": [
         {
           "title":"Studio",
           "day": "24",
@@ -74,6 +74,7 @@
     "1": {
       "id": "1",
       "name": "Squad",
+      "joined": false,
       "members": ["3", "1"],
       "plans": [
         {
@@ -109,6 +110,7 @@
     "2": {
       "id": "2",
       "name": "Lorem ipsum",
+      "joined": false,
       "members": ["0", "1", "2", "3"],
       "plans": [
         {

@@ -1,4 +1,4 @@
-{{#> layouts/app page-title="Groups" sub=name back-page="Groups"}}
+{{#> layouts/app page-title="Groups" sub=name back-page="groups"}}
 
 	{{#*inline "head-block"}}
 	<link rel="stylesheet" type="text/css" href="/css/groups.css">
@@ -22,6 +22,16 @@
 				{{#each memberinfo}}
 					<p>{{name}}</p>
 				{{/each}}
+			</div>
+		</div>
+
+		<div class="content-card">
+			<div class="content-card-body">
+				{{#if joined}}
+				<a class="btn btn-block btn-secondary" href="/joingroup/{{id}}">Leave Group</a>
+				{{else}}
+				<a class="btn btn-block btn-primary" href="/joingroup/{{id}}">Join Group</a>
+				{{/if}}
 			</div>
 		</div>
 	{{/inline}}

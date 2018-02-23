@@ -1,11 +1,15 @@
 <div class="grplist-item">
 	<header>
-		<h3>{{name}}</h3>
-		<a href="/groups/{{id}}">
+		<a class="grplist-link" href="/groups/{{id}}">
+			<h3>{{name}}</h3>
 			<i data-feather="arrow-right"></i>
 		</a>
 	</header>
 	<div>
-		{{members.length}} members
+		{{#if joined}}
+		Joined<i style="stroke:green" data-feather="check"></i>
+		{{else}}
+		Not a member
+		{{/if}}
 	</div>
 </div>

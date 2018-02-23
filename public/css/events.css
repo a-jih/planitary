@@ -9,22 +9,19 @@
 	margin-top: .5rem;
 }
 
-.event>header {
+.eventinfo>.eventinfo-time {
 	padding: 1rem;
 }
 
-.event>header>h3 {
-	margin-bottom: 0;
-}
-
-.eventinfo>.eventinfo-time,
+.eventinfo>.eventinfo-label,
 .eventinfo>.eventinfo-description,
-.eventinfo>.eventinfo-going{
+.eventinfo>.eventinfo-going {
 	border-top: 1px solid rgba(0,0,0,0.2);
 	padding: 1rem;
 }
 
-.eventinfo-time>* {
+.eventinfo-time>*,
+.eventinfo-label>* {
 	margin-bottom: 0;
 }
 
@@ -33,7 +30,7 @@
 }
 
 .eventinfo-range {
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .eventinfo-description>p {

@@ -35,18 +35,28 @@
 }
 
 .grplist-item>header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 0.7rem 1rem;
 }
 
-.grplist-item>header>h3 {
+.grplist-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grplist-link:hover {
+  text-decoration: none;
+}
+
+.grplist-link>h3 {
   font-weight: 600;
   margin: 0;
 }
 
 .grplist-item>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   border-top: 1px solid rgba(0,0,0,0.1);
   padding: 0.7rem 1rem;
 }

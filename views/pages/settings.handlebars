@@ -1,32 +1,10 @@
 {{#> layouts/app page-title="Settings"}}
 	{{#*inline "head-block"}}
-	{{!--<link rel="stylesheet" type="text/css" href="/css/login.css">--}}
 	<link rel="stylesheet" type="text/css" href="/css/settings.css">
 	<script type="text/javascript" src="/js/index.js"></script>
 	{{/inline}}
 
 	{{#*inline "main-block"}}
-
-
-	<div class="content-card">
-		<header>
-			<h3>Security Settings</h3>
-		</header>
-		<section class="content-card-body border-top">
-			<form>
-				<h4>Password</h4>
-				<p class="form-group">
-					<label for="ch-password">New Password</label>
-					<input class="form-control" type="password" name="ch-password" id="ch-password" placeholder="New Password" required>
-				</p>
-				<p class="form-group">
-					<label for="ch-password-confirm">Confirm Password</label>
-					<input class="form-control" type="password" name="ch-password-confirm" id="ch-password-confirm" placeholder="Confirm Password" required>
-				</p>
-				<input class="btn btn-primary btn-block" type="button" id="new-password-submit" value="Change Password">
-			</form>
-		</section>
-	</div>
 
 	<div class="content-card">
 		<header>
@@ -34,15 +12,26 @@
 		</header>
 		<section class="content-card-body border-top">
 			<form>
-				<h4>Add Calendar</h4>
 				<p class="form-group">
-					<label for="calendar">iCal File</label>
-					<input class="form-control-file" type="file" name="calendar" id="calendar">
+					<input class="form-control-file inputfile" type="file" name="calendar" id="calendar">
+					<label for="calendar" class="btn btn-block btn-primary">
+						<i class="feather-icon" data-feather="upload"></i>
+						<span>Choose iCal File</span>
+					</label>
 				</p>
 			</form>
 		</section>
 	</div>
 
+	<div class="content-card">
+		<section class="content-card-body">
+			<a class="btn btn-block btn-secondary" href="/">Log Out</a>
+		</section>
+	</div>
+
 	{{/inline}}
 
+	{{#*inline "scripts-block"}}
+	<script type="text/javascript" src="/js/settings.js"></script>
+	{{/inline}}
 {{/layouts/app}}  

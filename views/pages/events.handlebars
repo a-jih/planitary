@@ -18,7 +18,7 @@
 		<div class="content-card-body">
 			{{#each groups}}
 				{{#each events}}
-					{{> includes/group-events}}
+					{{> includes/group-events groupname=../name}}
 				{{/each}}
 			{{/each}}
 		</div>
