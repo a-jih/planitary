@@ -1,15 +1,34 @@
 $(document).ready(function() {
     $("#btn").click(function(e){
-    var jsonData = {};
-
-    var eventTitle = document.getElementById("title").value;
+/*
+    var titl = document.getElementById("title").value;
     var groupName = document.getElementById("group").value;
-    console.log(eventTitle);
-    console.log(groupName);
+    var dat = document.getElementById("Day").value;
+    var start = document.getElementById("start").value;
+    var endt = document.getElementById("end").value;
+    var descriptio = document.getElementById("description").value;
 
-    data.groups["0"].events;
-    var formData = $("#myform").serializeArray();
-    e.preventDefault();	
-      
+
+    console.log(titl);
+    console.log(groupName);
+    console.log(start);
+    console.log(endt);
+    console.log(descriptio);
+    console.log(dat);
+
+    var eve = {title:titl, date:dat, startt:start, endt:end, 
+                    description:descriptio};
+    var json = JSON.stringify(eve);
+    console.log(eve);
+    console.log(json);
+
+    /* Checking for the right group to put data 
+    if(groupName == data.groups.name)
+    {
+
+    } 
+    data.groups["0"].events.push(eve);
+    e.preventDefault();
+    console.log(data.groups["0"]); */
   });
   });

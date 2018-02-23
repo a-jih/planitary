@@ -30,7 +30,7 @@
       [
         {
           "title":"Studio",
-          "date": "24th January 2018",
+          "date": "2003-03-21",
           "startt" : "3:00 PM",
           "endt": "4:00 PM",
           "description": "Lots of New Assignments"
@@ -45,7 +45,7 @@
           "start": "3:00",
           "end": "4:45PM",
           "friends": ["0", "1", "2"]
-          
+        
         },
         {
           "day": "15",

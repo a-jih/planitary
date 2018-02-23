@@ -10,7 +10,7 @@
 	{{#*inline "main-block"}}
 	{{!-- Form Creation --}}
 	<br>
-	<form id = "myForm" class="myForm" autocomplete="off" method="post">
+	<form id = "myForm" class="myForm" autocomplete="off">
 		<select class="form-control" id="group">
 			<option disabled selected>Select a group</option>
 			{{#each groups}}
@@ -22,7 +22,7 @@
 			<input class="form-control" for="name" placeholder="Name" type="text" id="title"></input>
 		</p>
 		<p>
-			<input class="form-control" placeholder="Day" type="text" id="Day"></input>
+			<input type="date" class="form-control" placeholder="Day" type="text" id="Day"></input>
 		</p>
 		<div class = "b">
 			 <p>
@@ -33,16 +33,15 @@
 		<div class = "b">
 			<p>
 				<label for="end">End Time</label>
-				<input type = "time" name="end" class = "form-control" placeholder="End Time" type="text" id="start"></input>
+				<input type = "time" name="end" class = "form-control" placeholder="End Time" type="text" id="end"></input>
 			</p>
 		</div>
 		<p>
 			<input class="form-control" placeholder="Description" type="text" id="description"></input>
 		</p>
-		<input class="btn" id="btn" type="submit">
-			<!--<a href="/plans" >Planit</a>-->
+		<button class="btn" id="btn" type="submit">
 			Planit
-		</input>
+		</button>
 	</form>
 	{{/inline}}
 

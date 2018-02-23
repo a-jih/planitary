@@ -30,6 +30,10 @@ form {
   {
       text-align: center;
   }
+  form #Day
+  {
+      text-align: center;
+  }
   form #description 
   {
     background-image: transparent;
