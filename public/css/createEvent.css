@@ -1,27 +1,6 @@
-.titles a {
-    color: #FF8C00;
-}
-
-.titles h2 {
-    text-align: center;
-    color: #FF8C00;
-}
-
-.titles hr {
-    text-align: center;
-    border-color: #FF8C00;
-    border-width: 2px;
-}
-
-body {
-    background-image: radial-gradient(50% 0%, #404040 20%, #404040 100%);
-}
-
 form {
-    margin-top: 10%;
-    background-image: transparent;
-    padding: 1rem;
-    color: #404040;
+    margin: 0;
+    background-color: #404040;
 }
 
 form input {
@@ -38,21 +17,18 @@ form input {
     transition: 0.2s linear;
 }
 
-form button {
-    margin-top: -2%;
-    margin-bottom: 4%;
-    border-radius: 10px;
-    width: 60%;
-    padding: 10px;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-    color: white;
-    font-size: 30px;
-    font-weight: 400;
-    background-color: #FF8C00;
+form label {
+    color: #FF8C00;
 }
 
+#btn-planit {
+    margin-top: 2rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #FF8C00; 
+}
 
-.b {
-    display: inline-block;
-    position: relative;
+#btn-planit:active {
+    background-color: rgb(245, 125, 12);
 }

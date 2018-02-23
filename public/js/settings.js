@@ -20,10 +20,13 @@ function initializePage() {
       else
         fileName = e.target.value.split('\\').pop();
 
-      if (fileName)
+      if (fileName) {
         label.querySelector('span').innerHTML = fileName;
-      else
+        $('#ical-upload').attr('disabled', false);
+      } else {
         label.innerHTML = labelVal;
+        $('#ical-upload').attr('disabled', false);
+      }
     });
   });
 }

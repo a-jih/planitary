@@ -33,11 +33,9 @@
           "day": "24",
           "month": "Febuary",
           "year": "2017",
-          "weekday": "Tuesday",
           "startt" : "3:00 PM",
           "endt": "4:00 PM",
-          "description": "Lots of New Assignments",
-          "friends": ["0", "1"]
+          "description": "Lots of New Assignments"
         }
       ],
       "plans": [
@@ -45,7 +43,6 @@
           "day": "12",
           "month": "Febuary",
           "year": "2017",
-          "weekday": "Monday",
           "start": "3:00",
           "end": "4:45PM",
           "friends": ["0", "1", "2"]
@@ -54,7 +51,6 @@
           "day": "15",
           "month": "Febuary",
           "year": "2017",
-          "weekday": "Thursday",
           "start": "11:00AM",
           "end": "11:30AM",
           "friends": ["0", "1"],
@@ -64,7 +60,6 @@
           "day": "23",
           "month": "March",
           "year": "2017",
-          "weekday": "Thursday",
           "start": "9:00AM",
           "end": "2:00PM",
           "friends": ["2", "1"]

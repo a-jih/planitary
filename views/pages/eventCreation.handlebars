@@ -1,48 +1,48 @@
 {{#> layouts/app page-title="Events" sub="Create Event" back-page="events"}} {{!-- Going to add css to head block later --}}
 	{{#*inline "head-block"}}
 	<link rel="stylesheet" type="text/css" href="/css/createEvent.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type ="text/javascript"></script>
-	<script type="text/javascript" src="/js/eventCreation.js"></script>
 	{{/inline}}
 
 	{{!-- The main block for content --}}
 
 	{{#*inline "main-block"}}
 	{{!-- Form Creation --}}
-	<form id = "myForm" class="myForm content-card" autocomplete="off" method="post">
-		<p class="form-group">
-			<label for="group">Group</label>
-			<select class="form-control" id="group">
-				<option disabled selected>Select a group</option>
-				{{#each groups}}
-				<option value="{{name}}">{{name}}</option>
-				{{/each}}
-			</select>
-		</p>
-		<p class="form-group">
-			<label for="title">Title</label>
-			<input class="form-control" type="text" name="title" id="title" placeholder="Name"></input>
-		</p>
-		<p class="form-group">
-			<label for="Day">Date</label>
-			<input class="form-control" type="date" name="Day" id="Day" placeholder="Day"></input>
-		</p>
-		<div class="form-row">
-			<p class="form-group col">
-				<label for="start">Start Time</label>
-				<input type="time" name="start" class="form-control" placeholder="Start Time" type="text" id="start"></input>
+	<div class="content-card">
+		<form id="myForm" class="content-card-body" autocomplete="off" role="form" method="get" action="/create">
+			<p class="form-group">
+				<label for="group">Group</label>
+				<select class="form-control" name="group" id="group">
+					<option disabled selected>Select a group</option>
+					{{#each groups}}
+					<option value="{{name}}">{{name}}</option>
+					{{/each}}
+				</select>
 			</p>
-			<p class="form-group col">
-				<label for="end">End Time</label>
-				<input type = "time" name="end" class = "form-control" placeholder="End Time" type="text" id="end"></input>
+			<p class="form-group">
+				<label for="title">Title</label>
+				<input class="form-control" type="text" name="title" id="title" placeholder="Name"></input>
 			</p>
-		</div>
-		<p class="form-group">
-			<label for="description">Description</label>
-			<textarea class="form-control" name="description" placeholder="Description" type="text" id="description"></textarea>
-		</p>
-		<input class="btn btn-primary btn-block" id="btn" type="submit" value="Planit"></input>
-	</form>
+			<p class="form-group">
+				<label for="date">Date</label>
+				<input class="form-control" type="date" name="date" id="date" placeholder="Date"></input>
+			</p>
+			<div class="form-row">
+				<p class="form-group col">
+					<label for="startt">Start Time</label>
+					<input type="time" name="startt" class="form-control" placeholder="Start Time" id="startt"></input>
+				</p>
+				<p class="form-group col">
+					<label for="endt">End Time</label>
+					<input type="time" name="endt" class="form-control" placeholder="End Time" id="endt"></input>
+				</p>
+			</div>
+			<p class="form-group">
+				<label for="description">Description</label>
+				<textarea class="form-control" name="description" placeholder="Description" id="description"></textarea>
+			</p>
+			<input class="btn btn-block" id="btn-planit" type="submit" value="Planit"></input>
+		</form>
+	</div>	
 	{{/inline}}
 
 	{{#*inline "scripts-block"}}
