@@ -19,6 +19,7 @@ body {
 #app-header {
   position: fixed;
   justify-content: center;
+  color: #fff;
   top: 0;
   left: 0;
   right: 0;
@@ -35,9 +36,9 @@ body {
 }
 
 .app-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 0;
-  text-align: center;
+  text-align: left;
   font-weight: 600;
 }
 
@@ -64,7 +65,7 @@ font-size: 40px;
 color: #000000;
 position: relative;
 left: 36%;
-top:18%;
+top: 18%;
 }
 .userinfo h2{
   position: relative;
