@@ -3,12 +3,23 @@
 {{#*inline "head-block"}}
 <link rel="stylesheet" type="text/css" href="/css/login.css">
 <script type="text/javascript" src="/js/index.js"></script>
+{{/inline}}
+
+{{#*inline "header-block"}}
+<header id="app-header">
+	<div>
+		<p class="app-title">
+			Planitary
+		</p>
+	</div>
+</header>
+{{/inline}}
+
+{{#*inline "main-block"}}
 
 	<h1>Planitary</h1>
 	<div id="rect"></div>
 
-{{/inline}}
-{{#*inline "main-block"}}
 	<section class="Wizard of Oz">
 		<p class="valid">Valid. Please wait a moment.</p>
 		<p class="error">Error. Please enter correct Username &amp; password.</p>
