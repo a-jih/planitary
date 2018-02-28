@@ -1,20 +1,25 @@
+body{
+	background-color: white;
+}
 form {
     margin: 0;
-    background-color: #404040;
+    background-color: transparent;
 }
 
 form label {
-    color: #FF8C00;
+    color: #157EFB;
 }
-
+.content-card{
+	border: transparent;
+}
 #btn-planit {
-    margin-top: 2rem;
+    margin-top: 3rem;
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 600;
-    background-color: #FF8C00; 
+    background-color: #157EFB; 
 }
 
 #btn-planit:active {
-    background-color: rgb(245, 125, 12);
+    background-color: blue;
 }
