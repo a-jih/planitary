@@ -1,5 +1,5 @@
 html, body {
-  background-color: #F1F1F1;
+  background-color: white;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -13,12 +13,12 @@ html, body {
   left: 50%;
   margin: -150px 0 0 -150px;
   position: relative;
-  top: 30%;
+  top: 22%;
   width: 300px;
 }
 
 .input {
-  font-family: Roboto-Regular;
+  font-family: Helvetica;
   outline: transparent;
   background-color: transparent;
   border: none;
@@ -41,7 +41,7 @@ input::-webkit-input-placeholder {
 }
 
 input:focus::-webkit-input-placeholder {
-  color: dodgerblue;
+  color: #157EFB;
 }
 
 .input:focus+.underline {
@@ -49,7 +49,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 .underline {
-  background-color: dodgerblue;
+  background-color: #157EFB;
   display: inline-block;
   height: 2px;
   left: 50px;
@@ -61,10 +61,24 @@ input:focus::-webkit-input-placeholder {
   transition: all 0.3s linear;
   width: 202px;
 }
-
+.btn-blk
+{
+  margin-left: 15%;
+  width: 70%;
+}
 .contens {
-  top: 50%;
+  top: 40%;
   position: relative;
+}
+.fml{
+  top: 83%;
+  position: fixed;
+  background-color: orange;
+  border: none;
+  text-align: center;
+}
+h3 {
+  color: white;
 }
 .inputfile {
   width: 0.1px;

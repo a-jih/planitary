@@ -35,23 +35,33 @@
     <span class="underline"></span>
 	<br>
 	<br>
-	<input class="input" placeholder="Password" type="text" >
+	<input class="input" placeholder="Password" type="password" >
     <span class="underline"></span>
 	<br>
 	<br>
 </div>
+{{! Upload Calendar }}
 	<section class="contens">
 			<form>
 				<p class="form-group">
 					<input class="form-control-file inputfile" type="file" name="calendar" id="calendar">
-					<label for="calendar" class="btn btn-block btn-primary">
+					<label for="calendar" class="btn btn-blk btn-primary">
 						<i class="feather-icon" data-feather="upload"></i>
 						<span>Choose iCal File</span>
 					</label>
 				</p>
-				<button type="submit" id="ical-upload" class="btn btn-block btn-primary" disabled>Upload</button>
+				<button type="submit" id="ical-upload" class="btn btn-blk btn-primary" disabled>Upload</button>
 			</form>
 		</section>
+	
+{{! Done button}}
+<button class="btn btn-blk fml">
+	<a href= "/planit">
+		<h3> 
+			Confirm
+		</h3>
+	</a>
+</button>
 {{/inline}}
 {{! Ending of the main block}}
 {{/layouts/base}}
