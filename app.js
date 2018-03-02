@@ -50,6 +50,7 @@ app.get('/planit', planit.view);
 app.get('/events', events.view);
 app.get('/groups', groups.view);
 app.get('/groups/:groupid', grpInfo.view);
+app.get('/groups/:groupid/:viewAlt', grpInfo.viewAlt);
 app.get('/settings', settings.view);
 app.get('/eventCreation', addEvent.view);
 app.get('/groupCreation', addGroup.view);

@@ -16,6 +16,7 @@
   {{!-- App Header --}}
   {{#*inline "header-block"}}
   <header id="app-header">
+    {{#if viewAlt}}
     <div>
       {{#if back-page}}
       <a class="back-button" href="/{{back-page}}">
@@ -26,7 +27,12 @@
       <p class="app-title">
         {{#if sub-title}}{{sub-title}}{{else}}{{#if title}}{{title}}{{/if}}{{/if}}
       </p>
+      {{else}}
+      <p class="app-title">
+        {{#if sub-title}}{{sub-title}}{{else}}{{#if title}}{{title}}{{/if}}{{/if}}
+      </p>
     </div>
+    {{/if}}
   </header>
   {{/inline}}
 

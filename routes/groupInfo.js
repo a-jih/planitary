@@ -7,8 +7,32 @@ var data = require('../data.json');
 
 exports.view = function(req, res) {
 
+
   var groupid = String(req.params.groupid);
   var groupdata = data.groups[groupid];
+
+  groupdata['viewAlt']=false;
+  
+  groupdata["memberinfo"] = {}
+
+  groupdata.members.forEach(function(element) {
+    groupdata.memberinfo[element] = (data.friends[element]);
+  });
+
+  groupdata["pages"] = data.pages;
+
+  groupdata["id"] = groupid;
+
+  console.log(groupdata);
+
+  res.render('groupInfo', groupdata);
+};
+exports.viewAlt = function(req, res) {
+
+  var groupid = String(req.params.groupid);
+  var groupdata = data.groups[groupid];
+
+  groupdata['viewAlt']=true;
 
   groupdata["memberinfo"] = {}
 
