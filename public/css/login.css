@@ -1,17 +1,17 @@
+/*
 body {
   /* background: #44c4e7 url("https://photos-6.dropbox.com/t/2/AAC_bdqR8LMkjEe-HPIf4K1DhtseMLRHPklBSzJSuzglvA/12/5714737/jpeg/1024x768/3/1418346000/0/2/bkg-blur.jpg/CLHm3AIgASgBKAI/b7RrveA2022yJyfO9RyRvv7LjJQESukGHssHUxVThzw") no-repeat center center fixed;
-   */
+   *//*
   background-size: cover;
   font-family: "Roboto";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /*background-image: radial-gradient(50% 0%, #fff 0%, #FF8C00 100%);*/
-  background-color: #404040;
+/*  background-color: #404040;
   border: 1px solid #979797;
 }
-
 /* top */
-
+/*
 .butns{
 
   margin:auto 0;
@@ -43,7 +43,7 @@ h2 {
 
 form input {
   /*outline: none;
-  display: block;*/
+  display: block;
   width: 80%;
   margin: 0 0 20px;
   padding: 10px 15px;
@@ -59,7 +59,7 @@ form input {
   transition: 0.2s linear;
   /*&input:focus {
         color: #333;
-        border: 1px solid #44c4e7; */
+        border: 1px solid #44c4e7; 
 }
 
 form button {
@@ -70,7 +70,7 @@ form button {
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   /*background-image: linear-gradient(-180deg, invalid gradient);
   cursor: pointer;
-  /* background: #44c4e7; */
+  /* background: #44c4e7; 
   color: white;
   font-size: 30px;
   font-weight: 400;
@@ -91,3 +91,102 @@ form button {
 ::placeholder {
   color: darkgray;
 }
+*/
+
+html, body {
+  background-color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.wrapper {
+  background-color: transparent;
+  height: 300px;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  position: relative;
+  top: 22%;
+  width: 300px;
+}
+
+.input {
+  outline: transparent;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  color: #555;
+  box-sizing: border-box;
+  font-size: 18px;
+  height: 50px;
+  left: 50%;
+  margin: -25px 0 0 -100px;
+  padding: 10px 0px;
+  position: relative;
+  top: 50%;
+  width: 200px;
+}
+
+input::-webkit-input-placeholder {
+  color: #AAA;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: #157EFB;
+}
+
+.input:focus+.underline {
+  transform: scale(1);
+}
+
+.underline {
+  background-color: #157EFB;
+  display: inline-block;
+  height: 2px;
+  left: 50px;
+  top:132px;
+  position: relative;
+  -webkit-transform: scale(0, 1);
+  transform: scale(0, 1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 202px;
+}
+.btn-blk
+{
+  margin-left: 19%;
+  width: 62%;
+}
+.contens {
+  top: 40%;
+  position: relative;
+}
+.fml{
+  top: 53%;
+  position: fixed;
+  background-color: orange;
+  border: none;
+  text-align: center;
+}
+.facebook
+{
+  top: 65%;
+  left: 28%;
+  position: fixed;
+}
+h3{
+  color: white;
+}
+hr {
+  color: orange;
+  top: 38%;
+  position: relative;
+}
+p{
+  position: relative;
+  top: 57%;
+  text-align: center;
+}
+

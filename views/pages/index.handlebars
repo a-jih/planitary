@@ -19,7 +19,7 @@
 
 	<h1>Planitary</h1>
 	<div id="rect"></div>
-
+	<!--
 	<section class="Wizard of Oz">
 		<p class="valid">Valid. Please wait a moment.</p>
 		<p class="error">Error. Please enter correct Username &amp; password.</p>
@@ -31,7 +31,24 @@
 			<button id="submit">Login</button>
 		</form>
 	</section>
-
+	-->
+	<div class="wrapper">
+    <input class="input" placeholder="Username" type="text" >
+    <span class="underline"></span>
+	<br>
+	<br>
+	<input class="input" placeholder="Password" type="password" >
+    <span class="underline"></span>
+	<br>
+	<br>
+	</div>
+<button class="btn btn-blk fml">
+	<a href= "/planit">
+		<h3> 
+			Login
+		</h3>
+	</a>
+</button>
 	<!-- Facebook Login --> 
  	<script>
  	 window.fbAsyncInit = function() {
@@ -55,9 +72,18 @@
    }(document, 'script', 'facebook-jssdk'));
 </script>
 <script src="/js/facebook.js"></script>
-<div class = "butns"> 
-	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+<div class="facebook">
+<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+</div>
+<!-- 
+<div class = "facebook"> 
+	<fb:login-button scope="public_profile,email" data-button-type="login-with" data-size="large" onlogin="checkLoginState();">
 	</fb:login-button>
 </div>
+	< Facebook End --> 
+
+<p>
+	Don't have an account? <a href="/signup"> Signup</a>
+</p>
 {{/inline}}
 {{/layouts/base}}
