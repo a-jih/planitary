@@ -52,6 +52,7 @@ app.get('/settings', settings.view);
 app.get('/eventCreation', addEvent.view);
 app.get('/joingroup/:groupid', grpInfo.join);
 app.post('/create', addEvent.create);
+app.get('/eventCreation/:gid/:pid', addEvent.view);
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){
