@@ -19,6 +19,9 @@
 				<h3>Members</h3>
 			</header>
 			<div class="content-card-body memberlist">
+				{{#if joined}}
+					<p>{{user.firstname}} {{user.lastname}}</p>
+				{{/if}}
 				{{#each memberinfo}}
 					<p>{{name}}</p>
 				{{/each}}

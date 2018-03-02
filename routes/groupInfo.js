@@ -16,9 +16,19 @@ exports.view = function(req, res) {
     groupdata.memberinfo[element] = (data.friends[element]);
   });
 
-  groupdata["pages"] = data.pages;
+  const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July',
+                  'August', 'September', 'October', 'November', 'December'];
 
-  groupdata["id"] = groupid;
+  for (let planid of Object.keys(groupdata.plans))
+  {
+    var plan = groupdata.plans[planid];
+    plan["month-string"] = months[Number(plan.month) - 1];
+  }
+
+  groupdata["pages"] = data.pages;
+  groupdata["user"] = data.user;
+
+  //groupdata["id"] = groupid;
 
   console.log(groupdata);
 

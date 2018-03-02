@@ -1,4 +1,10 @@
 {
+  "user": {
+    "username": "testacc",
+    "password": "password",
+    "firstname": "Scott",
+    "lastname": "Klemmer"
+  },
   "pages": [
     {
       "title": "Suggestions",

@@ -17,6 +17,7 @@ var events   = require('./routes/events');
 var groups   = require('./routes/groups');
 var settings = require('./routes/settings');
 var addEvent = require('./routes/eventCreation');
+var addGroup = require('./routes/groupCreation');
 var grpInfo  = require('./routes/groupInfo');
 var signup   = require('./routes/signup');
 
@@ -51,9 +52,11 @@ app.get('/groups', groups.view);
 app.get('/groups/:groupid', grpInfo.view);
 app.get('/settings', settings.view);
 app.get('/eventCreation', addEvent.view);
+app.get('/groupCreation', addGroup.view);
 app.get('/joingroup/:groupid', grpInfo.join);
 app.get('/signup',signup.view);
 app.post('/create', addEvent.create);
+app.post('/createGroup', addGroup.create);
 app.get('/eventCreation/:gid/:pid', addEvent.view);
 
 // Create server

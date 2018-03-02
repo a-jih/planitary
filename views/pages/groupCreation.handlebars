@@ -1,0 +1,25 @@
+{{#> layouts/app page-title="Groups" sub="Create Group" back-page=back}}
+	{{#*inline "head-block"}}
+	<link rel="stylesheet" type="text/css" href="/css/createEvent.css">
+	{{/inline}}
+
+	{{!-- The main block for content --}}
+
+	{{#*inline "main-block"}}
+	{{!-- Form Creation --}}
+	<div class="content-card">
+		<form class="needs-validation content-card-body" role="form" method="post" action="/createGroup" novalidate>
+			<div class="form-group">
+				<label for="title">Title</label>
+				<input class="form-control" type="text" name="groupname" id="groupname" placeholder="Name" required></input>
+				<div class="invalid-feedback">Please specify a group name.</div>
+			</div>
+			<input class="btn btn-block" id="btn-planit" type="submit" value="Create Group"></input>
+		</form>
+	</div>	
+	{{/inline}}
+
+	{{#*inline "scripts-block"}}
+	<script type="text/javascript" src="/js/addgroup.js"></script>
+	{{/inline}}
+{{/layouts/app}}

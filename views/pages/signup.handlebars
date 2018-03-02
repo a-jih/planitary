@@ -49,7 +49,7 @@
 	<section class="contens">
 			<form>
 				<p class="form-group">
-					<input class="form-control-file inputfile" type="file" name="calendar" id="calendar">
+					<input class="form-control-file inputfile" type="file" name="calendar" id="calendar" accept=".ics,.ical,.ifb,.icalendar">
 					<label for="calendar" class="btn btn-blk btn-primary">
 						<i class="feather-icon" data-feather="upload"></i>
 						<span>Choose iCal File</span>
@@ -67,6 +67,10 @@
 		</h3>
 	</a>
 </button>
+{{/inline}}
+
+{{#*inline "scripts-block"}}
+<script type="text/javascript" src="/js/settings.js"></script>
 {{/inline}}
 {{! Ending of the main block}}
 {{/layouts/base}}
