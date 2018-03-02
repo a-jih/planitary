@@ -1,5 +1,4 @@
 {{!-- layout/group-suggestions --}}
-
   <div class="carousel">
     <div class="carousel-wrapper">
       <div>
@@ -7,13 +6,15 @@
           <!-- Suggested Plans -->
           {{#each plans}}
           <li>
-            <a href="/eventCreation">
+            <a class="plan-link" href="/eventCreation/{{../gid}}/{{id}}">
               <div class="plan">
                 <header>
-                  <h6>{{month}} {{day}}</h6>
+                  <h6>{{month-string}} {{day}}</h6>
                 </header>
                 <div class="plan-body">
-                  <p class="plan-range">{{start}} - {{end}}</p>
+                  <p class="plan-range">
+                    <span class="startt">{{start}}</span> - <span class="endtt">{{end}}</span>
+                  </p>
                   <p class="plan-avail">{{friends.length}} friends available</p>
                 </div>
               </div>

@@ -3,14 +3,13 @@
 {{#> layouts/app page-title="Suggestions"}}
 
 	{{#*inline "main-block"}}
-
 		{{#each groups}}
 			<div class="content-card grpplans">
 				<header>
     			<h3>{{name}}</h3>
   			</header>
 				<div>
-				{{> includes/group-plans}}
+				{{> includes/group-plans gid=id}}
 				</div>
 			</div>
 		{{/each}}
