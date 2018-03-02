@@ -4,6 +4,8 @@
  */
 
 var data = require('../data.json');
+const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July',
+                  'August', 'September', 'October', 'November', 'December'];
 
 exports.view = function(req, res) {
 
@@ -19,14 +21,20 @@ exports.view = function(req, res) {
     groupdata.memberinfo[element] = (data.friends[element]);
   });
 
-  groupdata["pages"] = data.pages;
+  for (let planid of Object.keys(groupdata.plans))
+  {
+    var plan = groupdata.plans[planid];
+    plan["month-string"] = months[Number(plan.month) - 1];
+  }
 
-  groupdata["id"] = groupid;
+  groupdata["pages"] = data.pages;
+  groupdata["user"] = data.user;
 
   console.log(groupdata);
 
   res.render('groupInfo', groupdata);
 };
+
 exports.viewAlt = function(req, res) {
 
   var groupid = String(req.params.groupid);
@@ -39,9 +47,6 @@ exports.viewAlt = function(req, res) {
   groupdata.members.forEach(function(element) {
     groupdata.memberinfo[element] = (data.friends[element]);
   });
-
-  const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July',
-                  'August', 'September', 'October', 'November', 'December'];
 
   for (let planid of Object.keys(groupdata.plans))
   {
@@ -72,19 +77,5 @@ exports.join = function(req, res) {
     data.groups[groupid].joined = true;
   }
 
-  var groupdata = data.groups[groupid];
-
-  groupdata["memberinfo"] = {}
-
-  groupdata.members.forEach(function(element) {
-    groupdata.memberinfo[element] = (data.friends[element]);
-  });
-
-  groupdata["pages"] = data.pages;
-
-  groupdata["id"] = groupid;
-
-  console.log(groupdata);
-
-  res.render('groupInfo', groupdata);
+  res.redirect('/groups');
 }
