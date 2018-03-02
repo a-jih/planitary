@@ -1,10 +1,72 @@
-<html>
-<head>
-	<title>Sign Up | Planitary</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-	<a href="/plans">Create Account</a>
-	<a href="/index">Cancel</a>
-</body>
-</html>
+{{#> layouts/base title="Login"}}
+
+{{! The head Block }}
+{{#*inline "head-block"}}
+<link rel="stylesheet" type="text/css" href="/css/signup.css">
+<!--===============================================================================================-->
+{{/inline}}
+{{! Ending of the head block}}
+
+{{! Starting of the header block}}
+{{#*inline "header-block"}}
+ <header id="app-header">
+    <div>
+      <p class="app-title">
+        <h1>Signup</h1>
+      </p>
+    </div>
+  </header>
+{{/inline}}
+{{! Ending of the header block}}
+
+{{! Starting of the main block}}
+{{#*inline "main-block"}}
+	<a href="/">
+		<p class="bask">
+		Back
+		</p>
+	</a>
+{{! The Input Wrapper}}
+<div class="wrapper">
+	<input class="input" placeholder="First Name" type="text" >
+    <span class="underline"></span>
+	<br>
+	<br>
+	<input class="input" placeholder="Last Name" type="text" >
+    <span class="underline"></span>
+	<br>
+	<br>
+    <input class="input" placeholder="Username" type="text" >
+    <span class="underline"></span>
+	<br>
+	<br>
+	<input class="input" placeholder="Password" type="password" >
+    <span class="underline"></span>
+	<br>
+	<br>
+</div>
+{{! Upload Calendar }}
+	<section class="contens">
+			<form>
+				<p class="form-group">
+					<input class="form-control-file inputfile" type="file" name="calendar" id="calendar">
+					<label for="calendar" class="btn btn-blk btn-primary">
+						<i class="feather-icon" data-feather="upload"></i>
+						<span>Choose iCal File</span>
+					</label>
+				</p>
+				<button type="submit" id="ical-upload" class="btn btn-blk btn-primary" disabled>Upload</button>
+			</form>
+		</section>
+	
+{{! Done button}}
+<button class="btn btn-blk fml">
+	<a href= "/planit">
+		<h3> 
+			Confirm
+		</h3>
+	</a>
+</button>
+{{/inline}}
+{{! Ending of the main block}}
+{{/layouts/base}}

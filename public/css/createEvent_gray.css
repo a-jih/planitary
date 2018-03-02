@@ -1,0 +1,20 @@
+form {
+    margin: 0;
+    background-color: #404040;
+}
+
+form label {
+    color: #FF8C00;
+}
+
+#btn-planit {
+    margin-top: 2rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: #FF8C00; 
+}
+
+#btn-planit:active {
+    background-color: rgb(245, 125, 12);
+}

@@ -19,6 +19,12 @@
 	border-top: 1px solid rgba(0,0,0,0.2);
 	padding: 1rem;
 }
+.eventinfo-time{
+	color: white;
+	background-color: #157EFB;
+	border-top-right-radius: 1rem;
+	border-top-left-radius: 1rem;
+}
 
 .eventinfo-time>*,
 .eventinfo-label>* {
