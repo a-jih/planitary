@@ -6,8 +6,16 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express-handlebars');
-var fs = require('fs');
+
+var handlebars     = require('express-handlebars');
+var favicon        = require('serve-favicon');
+var logger         = require('morgan');
+var methodOverride = require('method-override');
+var session        = require('express-session');
+var bodyParser     = require('body-parser');
+var cookieParser   = require('cookie-parser');
+//var multer         = require('multer');
+var errorHandler   = require('errorhandler');
 
 var hdbHelpers = require('./helpers/handlebars.js')(handlebars);
 
@@ -26,22 +34,24 @@ var app = express();
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views/pages/'));
-app.engine('handlebars', hdbHelpers.engine);
 app.set('view engine', 'handlebars');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(express.cookieParser('IxD secret key'));
-app.use(express.session());
-app.use(app.router);
+app.engine('handlebars', hdbHelpers.engine);
+//app.use(favicon());
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(methodOverride());
+app.use(cookieParser('IxD secret key'));
+app.use(session({ resave: true,
+                  saveUninitialized: true,
+                  secret: 'IxD secret key' }));
+//app.use(multer());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/js', express.static(__dirname + '/node_modules/feather-icons/dist/'));
 
 // development only
 if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 }
 
 // Get views
