@@ -12,11 +12,10 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "3.x",
-    "express-handlebars": "*",
+    "express": "^3.21.2",
+    "express-handlebars": "^3.0.0",
     "feather-icons": "^4.7.0",
-    "mongodb": "*",
-    "mongoose": "*"
+    "get-random-values": "^1.2.0"
   },
   "engines": {
     "node": "8.9.x"
