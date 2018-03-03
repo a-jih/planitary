@@ -1,10 +1,10 @@
 {
-  "name": "IntroHCI",
+  "name": "Planitary",
   "version": "0.0.1",
-  "author": "Intro HCI Staff",
+  "author": "Planitary Team",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IntroHCI/lab4"
+    "url": "https://github.com/a-jih/planitary"
   },
   "license": "MIT",
   "private": true,
@@ -12,10 +12,18 @@
     "start": "node app.js"
   },
   "dependencies": {
-    "express": "^3.21.2",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "errorhandler": "^1.5.0",
+    "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
     "feather-icons": "^4.7.0",
-    "get-random-values": "^1.2.0"
+    "get-random-values": "^1.2.0",
+    "method-override": "^2.3.10",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.0",
+    "serve-favicon": "^2.4.5"
   },
   "engines": {
     "node": "8.9.x"
