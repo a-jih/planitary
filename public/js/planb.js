@@ -4,9 +4,9 @@ $(document).ready(function () {
   initializePage();
 });
 
-$(".Listen").click(function() {
-	console.log("Page A");
-	ga('send', 'event', 'Page Click', 'On A');
+$("button").click(function() {
+	console.log("PageB");
+	ga('send', 'event', 'Page Click', 'On B');
 });
 
 function initializePage() {

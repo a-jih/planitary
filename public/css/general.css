@@ -187,3 +187,14 @@ top:20%;
 .fab a {
 	color: white;
  }
+
+ /* Additional Code for the A/B testing */ 
+ .navba {
+  position: fixed;
+  top: 9%;
+  right: .1%;
+  width: 100%;
+  background-color: #ECECEC;
+  z-index: 100000;
+  text-indent:5%;
+ }

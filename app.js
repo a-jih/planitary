@@ -28,6 +28,7 @@ var addEvent = require('./routes/eventCreation');
 var addGroup = require('./routes/groupCreation');
 var grpInfo  = require('./routes/groupInfo');
 var signup   = require('./routes/signup');
+var planB = require('./routes/planb');
 
 var app = express();
 
@@ -66,6 +67,7 @@ app.get('/eventCreation', addEvent.view);
 app.get('/groupCreation', addGroup.view);
 app.get('/joingroup/:groupid', grpInfo.join);
 app.get('/signup',signup.view);
+app.get('/planB', planB.view);
 app.post('/create', addEvent.create);
 app.post('/createGroup', addGroup.create);
 app.get('/eventCreation/:gid/:pid', addEvent.view);
