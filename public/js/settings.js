@@ -22,9 +22,11 @@ function initializePage() {
 
       if (fileName) {
         label.querySelector('span').innerHTML = fileName;
+        label.classList.add('btn-success');
         $('#ical-upload').attr('disabled', false);
       } else {
         label.innerHTML = labelVal;
+        label.classList.remove('btn-success');
         $('#ical-upload').attr('disabled', false);
       }
     });
