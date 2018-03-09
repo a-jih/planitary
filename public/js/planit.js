@@ -1,16 +1,14 @@
 'use strict';
 
 $(document).ready(function () {
+  console.log("Page connected")
   initializePage();
-});
-
-$(".Listen").click(function() {
-	console.log("Page A");
-	ga('send', 'event', 'Page Click', 'On A');
 });
 
 function initializePage() {
   $('.plan').click(function (e) {
+    ga('send', 'event', 'Page Click', 'On A');
+
     let planid  = $(this).attr('id');
     let groupid = $(this).closest('.grpplans').attr('id');
 
