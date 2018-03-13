@@ -10,8 +10,14 @@
 		<header>
 			<h3>Calendar Settings</h3>
 		</header>
+		{{#if user/uploaded}}
 		<section class="content-card-body border-top">
-			<form>
+			<h6 style="font-weight:600">Current iCal File</h6>
+			<p style="margin-bottom:0">{{user/ical-filename}}</p>
+		</section>
+		{{/if}}
+		<section class="content-card-body border-top">
+			<form action="/upload" method="POST" enctype="multipart/form-data" style="margin-bottom:0">
 				<p class="form-group">
 					<input class="form-control-file inputfile" type="file" name="calendar" id="calendar" accept=".ics,.ical,.ifb,.icalendar">
 					<label for="calendar" class="btn btn-block btn-primary">

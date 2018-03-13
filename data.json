@@ -3,7 +3,10 @@
     "username": "testacc",
     "password": "password",
     "firstname": "Scott",
-    "lastname": "Klemmer"
+    "lastname": "Klemmer",
+    "uploaded": false,
+    "ical-filename": "",
+    "ical-events": []
   },
   "pages": [
     {
@@ -32,14 +35,18 @@
       "id": "0",
       "name": "COGS120",
       "joined": true,
-      "members": ["0", "1", "2"],
+      "members": [
+        "0",
+        "1",
+        "2"
+      ],
       "events": [
         {
           "title": "Studio",
           "day": "24",
           "month": "2",
           "year": "2017",
-          "startt" : "15:00",
+          "startt": "15:00",
           "endt": "16:00",
           "description": "Lots of New Assignments"
         }
@@ -52,7 +59,11 @@
           "year": "2017",
           "start": "15:00",
           "end": "16:45",
-          "friends": ["0", "1", "2"]
+          "friends": [
+            "0",
+            "1",
+            "2"
+          ]
         },
         "1feraif84fww9": {
           "id": "1feraif84fww9",
@@ -61,7 +72,10 @@
           "year": "2017",
           "start": "11:00",
           "end": "11:30",
-          "friends": ["0", "1"],
+          "friends": [
+            "0",
+            "1"
+          ],
           "title": "Study Jam"
         },
         "2feq4b": {
@@ -71,7 +85,10 @@
           "year": "2017",
           "start": "09:00",
           "end": "14:00",
-          "friends": ["2", "1"]
+          "friends": [
+            "2",
+            "1"
+          ]
         }
       }
     },
@@ -79,14 +96,17 @@
       "id": "1",
       "name": "Squad",
       "joined": false,
-      "members": ["3", "1"],
+      "members": [
+        "3",
+        "1"
+      ],
       "events": [
         {
           "title": "Pottery",
           "day": "24",
           "month": "2",
           "year": "2017",
-          "startt" : "12:00",
+          "startt": "12:00",
           "endt": "13:00",
           "description": "Lots of New Assignments"
         }
@@ -100,7 +120,10 @@
           "weekday": "Monday",
           "start": "15:00",
           "end": "16:00",
-          "friends": ["0", "1"],
+          "friends": [
+            "0",
+            "1"
+          ],
           "title": "Pottery Making Session"
         },
         "10fd7G": {
@@ -111,7 +134,10 @@
           "weekday": "Thursday",
           "start": "16:00",
           "end": "17:00",
-          "friends": ["0", "1"]
+          "friends": [
+            "0",
+            "1"
+          ]
         },
         "a3": {
           "id": "a3",
@@ -121,7 +147,10 @@
           "weekday": "Thursday",
           "start": "16:00",
           "end": "17:00",
-          "friends": ["2", "1"]
+          "friends": [
+            "2",
+            "1"
+          ]
         }
       }
     },
@@ -129,7 +158,12 @@
       "id": "2",
       "name": "Lorem ipsum",
       "joined": false,
-      "members": ["0", "1", "2", "3"],
+      "members": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
       "events": [],
       "plans": {
         "adfda43": {
@@ -140,7 +174,11 @@
           "weekday": "Monday",
           "start": "03:00",
           "end": "04:00",
-          "friends": ["0", "1", "2"]
+          "friends": [
+            "0",
+            "1",
+            "2"
+          ]
         },
         "21312n12": {
           "id": "21312n12",
@@ -150,7 +188,10 @@
           "weekday": "Thursday",
           "start": "12:00",
           "end": "17:00",
-          "friends": ["0", "1"]
+          "friends": [
+            "0",
+            "1"
+          ]
         },
         "4vdb78vvD": {
           "id": "4vdb78vvD",
@@ -160,7 +201,10 @@
           "weekday": "Thursday",
           "start": "05:00",
           "end": "07:00",
-          "friends": ["2", "1"],
+          "friends": [
+            "2",
+            "1"
+          ],
           "title": "RHCP Concert"
         }
       }
@@ -168,16 +212,161 @@
   },
   "friends": {
     "0": {
-      "name": "Bobby D"
+      "name": "Dev Sharma",
+      "ical-events": [
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 13,
+            "hour": 11,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 13,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 13,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 13,
+            "hour": 17,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 14,
+            "hour": 10,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 14,
+            "hour": 12,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 14,
+            "hour": 11,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 14,
+            "hour": 15,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 15,
+            "hour": 8,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 15,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 15,
+            "hour": 10,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 15,
+            "hour": 12,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 3,
+            "day": 16,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 3,
+            "day": 16,
+            "hour": 16,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        }
+      ]
     },
     "1": {
-      "name": "Chucky C"
+      "name": "Chucky C",
+      "ical-events": []
     },
     "2": {
-      "name": "Tommy T"
+      "name": "Tommy T",
+      "ical-events": []
     },
     "3": {
-      "name": "Robby R"
+      "name": "Robby R",
+      "ical-events": []
     }
   }
 }

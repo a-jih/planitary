@@ -2,6 +2,7 @@
 
 	{{#*inline "head-block"}}
 	<link rel="stylesheet" type="text/css" href="/css/groups.css">
+	<link rel="stylesheet" type="text/css" href="/css/events.css">
 	{{/inline}}
 
 	{{#*inline "main-block"}}
@@ -11,6 +12,21 @@
 			</header>
 			<div>
 				{{> includes/group-plans gid=id}}
+			</div>
+		</div>
+
+		<div class="content-card">
+			<header>
+				<h3>Events</h3>
+			</header>
+			<div class="content-card-body">
+				{{#if events.length}}
+					{{#each events}}
+						{{> includes/group-events groupname=../name}}
+					{{/each}}
+				{{else}}
+					<span style="font-style:italic;color:#666">No events planned</span> 😥
+				{{/if}}
 			</div>
 		</div>
 
@@ -37,6 +53,7 @@
 				{{/if}}
 			</div>
 		</div>
+
 	{{/inline}}
 
 {{/layouts/app}}

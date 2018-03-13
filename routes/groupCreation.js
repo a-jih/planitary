@@ -5,7 +5,7 @@
 
 
 var data = require('../data.json');
-var utils = require('../utils.js');
+var utils = require('../controllers/utils.js');
 
 exports.view = function(req, res) {
   res.render('groupCreation', data);
