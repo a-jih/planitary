@@ -15,7 +15,20 @@ body {
   background-color: orange;
   box-shadow: 0 0 0.1rem 0 rgba(0,0,0,0.2);
 }
-
+.help-box{
+  color: white;
+  background-color: rgba(33,129,247,.7);
+  display: flex;
+  height: 3rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.help-text{
+  margin-top: auto;
+  margin-bottom: auto;
+}
 #app-header {
   position: fixed;
   justify-content: center;
@@ -125,7 +138,6 @@ top:20%;
   list-style:none;
   text-align:center;
 }
-
 .back-button {
   position: absolute;
   float: left;
