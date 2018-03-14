@@ -29,6 +29,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 		</div> 
 	<div class = "Listen">
 		{{#each groups}}
+			{{#if joined}}
 			<div class="content-card grpplans">
 				<header>
     			<h3>{{name}}</h3>
@@ -37,6 +38,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				{{> includes/group-plans gid=id}}
 				</div>
 			</div>
+			{{/if}}
 		{{/each}}
 	</div>
 	<script>

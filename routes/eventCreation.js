@@ -47,8 +47,8 @@ exports.create = function(req, res) {
     var month = date.getMonth();
     var year  = date.getFullYear();
 
-    startt = startt.toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit'});
-    endt = endt.toLocaleTimeString('en-US', {hour:'2-digit', minute:'2-digit'});
+    startt = startt.toLocaleTimeString('en-US', {hour12: true, hour:'2-digit', minute:'2-digit'});
+    endt = endt.toLocaleTimeString('en-US', {hour12: true, hour:'2-digit', minute:'2-digit'});
 
     var event = {
       'title': title,

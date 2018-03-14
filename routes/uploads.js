@@ -11,6 +11,11 @@ var data = require('../data.json');
 
 exports.addCal = function (req, res) {
 
+  if (!req.file)
+  {
+    res.redirect("/settings");
+  }
+
   var ical_file = req.file.path;
 
   // Parse iCal file
@@ -60,6 +65,9 @@ exports.addCal = function (req, res) {
   for (var i = 0; i < vevent.length; ++i) {
     var start_time = vevent[i].getFirstPropertyValue('dtstart')._time;
     var end_time = vevent[i].getFirstPropertyValue('dtend')._time;
+
+    start_time.month = start_time.month - 1;
+    end_time.month   = end_time.month - 1;
 
     var event = {
       start: start_time,

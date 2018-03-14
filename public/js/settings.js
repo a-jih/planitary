@@ -27,7 +27,7 @@ function initializePage() {
       } else {
         label.innerHTML = labelVal;
         label.classList.remove('btn-success');
-        $('#ical-upload').attr('disabled', false);
+        $('#ical-upload').attr('disabled', true);
       }
     });
   });

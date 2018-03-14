@@ -46,51 +46,12 @@
           "day": "24",
           "month": "2",
           "year": "2017",
-          "startt": "15:00",
-          "endt": "16:00",
+          "startt": "3:00 PM",
+          "endt": "4:00 PM",
           "description": "Lots of New Assignments"
         }
       ],
-      "plans": {
-        "000213ds": {
-          "id": "000213ds",
-          "day": "12",
-          "month": "2",
-          "year": "2017",
-          "start": "15:00",
-          "end": "16:45",
-          "friends": [
-            "0",
-            "1",
-            "2"
-          ]
-        },
-        "1feraif84fww9": {
-          "id": "1feraif84fww9",
-          "day": "15",
-          "month": "2",
-          "year": "2017",
-          "start": "11:00",
-          "end": "11:30",
-          "friends": [
-            "0",
-            "1"
-          ],
-          "title": "Study Jam"
-        },
-        "2feq4b": {
-          "id": "2feq4b",
-          "day": "23",
-          "month": "3",
-          "year": "2017",
-          "start": "09:00",
-          "end": "14:00",
-          "friends": [
-            "2",
-            "1"
-          ]
-        }
-      }
+      "plans": {}
     },
     "1": {
       "id": "1",
@@ -106,53 +67,12 @@
           "day": "24",
           "month": "2",
           "year": "2017",
-          "startt": "12:00",
-          "endt": "13:00",
+          "startt": "12:00 PM",
+          "endt": "1:00 PM",
           "description": "Lots of New Assignments"
         }
       ],
-      "plans": {
-        "53gaf": {
-          "id": "53gaf",
-          "day": "12",
-          "month": "2",
-          "year": "2017",
-          "weekday": "Monday",
-          "start": "15:00",
-          "end": "16:00",
-          "friends": [
-            "0",
-            "1"
-          ],
-          "title": "Pottery Making Session"
-        },
-        "10fd7G": {
-          "id": "10fd7G",
-          "day": "15",
-          "month": "2",
-          "year": "2017",
-          "weekday": "Thursday",
-          "start": "16:00",
-          "end": "17:00",
-          "friends": [
-            "0",
-            "1"
-          ]
-        },
-        "a3": {
-          "id": "a3",
-          "day": "23",
-          "month": "4",
-          "year": "2017",
-          "weekday": "Thursday",
-          "start": "16:00",
-          "end": "17:00",
-          "friends": [
-            "2",
-            "1"
-          ]
-        }
-      }
+      "plans": {}
     },
     "2": {
       "id": "2",
@@ -165,59 +85,18 @@
         "3"
       ],
       "events": [],
-      "plans": {
-        "adfda43": {
-          "id": "adfda43",
-          "day": "12",
-          "month": "4",
-          "year": "2017",
-          "weekday": "Monday",
-          "start": "03:00",
-          "end": "04:00",
-          "friends": [
-            "0",
-            "1",
-            "2"
-          ]
-        },
-        "21312n12": {
-          "id": "21312n12",
-          "day": "15",
-          "month": "4",
-          "year": "2017",
-          "weekday": "Thursday",
-          "start": "12:00",
-          "end": "17:00",
-          "friends": [
-            "0",
-            "1"
-          ]
-        },
-        "4vdb78vvD": {
-          "id": "4vdb78vvD",
-          "day": "23",
-          "month": "5",
-          "year": "2017",
-          "weekday": "Thursday",
-          "start": "05:00",
-          "end": "07:00",
-          "friends": [
-            "2",
-            "1"
-          ],
-          "title": "RHCP Concert"
-        }
-      }
+      "plans": {}
     }
   },
   "friends": {
     "0": {
+      "id": 0,
       "name": "Dev Sharma",
       "ical-events": [
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 13,
             "hour": 11,
             "minute": 30,
@@ -226,7 +105,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 13,
             "hour": 14,
             "minute": 30,
@@ -237,7 +116,7 @@
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 13,
             "hour": 14,
             "minute": 30,
@@ -246,7 +125,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 13,
             "hour": 17,
             "minute": 30,
@@ -257,7 +136,7 @@
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 14,
             "hour": 10,
             "minute": 30,
@@ -266,7 +145,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 14,
             "hour": 12,
             "minute": 30,
@@ -277,7 +156,7 @@
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 14,
             "hour": 11,
             "minute": 30,
@@ -286,7 +165,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 14,
             "hour": 15,
             "minute": 30,
@@ -297,7 +176,7 @@
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 15,
             "hour": 8,
             "minute": 30,
@@ -306,7 +185,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 15,
             "hour": 14,
             "minute": 30,
@@ -317,7 +196,7 @@
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 15,
             "hour": 10,
             "minute": 30,
@@ -326,7 +205,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 15,
             "hour": 12,
             "minute": 30,
@@ -337,7 +216,7 @@
         {
           "start": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 16,
             "hour": 14,
             "minute": 30,
@@ -346,7 +225,7 @@
           },
           "end": {
             "year": 2018,
-            "month": 3,
+            "month": 2,
             "day": 16,
             "hour": 16,
             "minute": 30,
@@ -357,14 +236,17 @@
       ]
     },
     "1": {
+      "id": "1",
       "name": "Chucky C",
       "ical-events": []
     },
     "2": {
+      "id": "2",
       "name": "Tommy T",
       "ical-events": []
     },
     "3": {
+      "id": "3",
       "name": "Robby R",
       "ical-events": []
     }

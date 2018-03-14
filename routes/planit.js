@@ -4,6 +4,7 @@
  */
 
 var data = require('../data.json');
+var planit = require('../controllers/suggest.js');
 
 exports.view = function(req, res){
   const months = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July',
@@ -11,10 +12,16 @@ exports.view = function(req, res){
 
   for (let groupid of Object.keys(data.groups))
   {
-    for (let planid of Object.keys(data.groups[groupid].plans))
+    // Get suggestions if member
+    if (data.groups[groupid].joined)
     {
-      var plan = data.groups[groupid].plans[planid];
-      plan["month-string"] = months[Number(plan.month) - 1];
+      data.groups[groupid].plans = planit.suggest(groupid);
+
+      for (let planid of Object.keys(data.groups[groupid].plans))
+      {
+        var plan = data.groups[groupid].plans[planid];
+        plan["month-string"] = months[Number(plan.month)];
+      }
     }
   }
 
