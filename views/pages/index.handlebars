@@ -1,89 +1,76 @@
 {{#> layouts/base title="Login"}}
-
 {{#*inline "head-block"}}
 <link rel="stylesheet" type="text/css" href="/css/login.css">
 <script type="text/javascript" src="/js/index.js"></script>
 {{/inline}}
-
 {{#*inline "header-block"}}
 <header id="app-header">
 	<div>
-		<p class="app-title">
-			Planitary
-		</p>
+		<p class="app-title">Planitary</p>
 	</div>
 </header>
 {{/inline}}
-
 {{#*inline "main-block"}}
+<main>
 
-	<h1>Planitary</h1>
-	<div id="rect"></div>
-	<!--
-	<section class="Wizard of Oz">
-		<p class="valid">Valid. Please wait a moment.</p>
-		<p class="error">Error. Please enter correct Username &amp; password.</p>
-		<form class="loginbox" autocomplete="off">
-			<input placeholder="Username" type="text" id="username"></input>
-			<br>
-			<input placeholder="Password" type="password" id="password"></input>
-			<br>
-			<button id="submit">Login</button>
-		</form>
-	</section>
-	-->
-	<div class="wrapper">
-    <input class="input" placeholder="Username" type="text" >
-    <span class="underline"></span>
-	<br>
-	<br>
-	<input class="input" placeholder="Password" type="password" >
-    <span class="underline"></span>
-	<br>
-	<br>
-	</div>
-<button class="btn btn-blk fml">
-	<a href= "/planit">
-		<h3> 
-			Login
-		</h3>
-	</a>
-</button>
-	<!-- Facebook Login --> 
- 	<script>
- 	 window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '1987964304798327',
-      cookie     : true,
-      xfbml      : true,
-      version    : 'v2.8'
-    });
-      
-    FB.AppEvents.logPageView();   
-      
-  };
+	<form class="login-form">
+		<p class="login-formcontrol">
+			<input class="login-input" placeholder="Username" type="text">
+			<span class="underline"></span>
+		</p>
+		<p class="login-formcontrol">
+			<input class="login-input" placeholder="Password" type="password">
+			<span class="underline"></span>
+		</p>
 
-  (function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-<script src="/js/facebook.js"></script>
-<div class="facebook">
-	<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-</div>
-<!-- 
-<div class = "facebook"> 
-	<fb:login-button scope="public_profile,email" data-button-type="login-with" data-size="large" onlogin="checkLoginState();">
-	</fb:login-button>
-</div>
-	< Facebook End --> 
+		<a class="btn btn-block btn-primary login-submit" href="/planit">
+			<span>
+				Log In
+			</span>
+		</a>
 
-<p>
-	Don't have an account? <a href="/signup"> Signup</a>
-</p>
-{{/inline}}
-{{/layouts/base}}
+		<!-- Facebook Login -->
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: '1987964304798327',
+					cookie: true,
+					xfbml: true,
+					version: 'v2.8'
+				});
+
+				FB.AppEvents.logPageView();
+
+			};
+
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) { return; }
+				js = d.createElement(s); js.id = id;
+				js.src = "https://connect.facebook.net/en_US/sdk.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script src="/js/facebook.js"></script>
+		
+		<div class="facebook">
+			<div class="fb-login-button" data-max-rows="1" data-size="medium" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false"
+			data-use-continue-as="false"></div>
+		</div>
+
+		<!-- 
+		<div class = "facebook"> 
+			<fb:login-button scope="public_profile,email" data-button-type="login-with" data-size="large" onlogin="checkLoginState();">
+			</fb:login-button>
+		</div>
+		< Facebook End -->
+	</form>
+
+	<aside>
+		<p>
+			Don't have an account?
+			<a href="/signup"> Signup</a>
+		</p>
+	</aside>
+</main>
+{{/inline}} {{/layouts/base}}

@@ -76,7 +76,8 @@ app.get('/planB', planB.view);
 app.get('/eventCreation/:gid/:pid', addEvent.view);
 app.post('/create', addEvent.create);
 app.post('/createGroup', addGroup.create);
-app.post('/upload', up.single('calendar'), uploads.addCal);
+app.post('/upload', up.single('calendar'), uploads.uploadSettings);
+app.post('/upload-signup', up.single('calendar'), uploads.uploadSignup);
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){

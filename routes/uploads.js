@@ -9,7 +9,17 @@ var fs    = require('fs');
 
 var data = require('../data.json');
 
-exports.addCal = function (req, res) {
+exports.uploadSettings = function(req, res) {
+  addCal(req, res);
+  res.redirect('/settings');
+}
+
+exports.uploadSignup = function(req, res) {
+  addCal(req, res);
+  res.redirect('/planit');
+}
+
+function addCal(req, res) {
 
   if (!req.file)
   {
@@ -83,6 +93,4 @@ exports.addCal = function (req, res) {
   data.user.uploaded = true;
   data.user['ical-events'] = sorted_events;
   data.user['ical-filename'] = req.file.originalname;
-
-  res.redirect('/settings');
 };
