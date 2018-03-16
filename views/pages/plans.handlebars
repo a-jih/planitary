@@ -27,7 +27,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 	</div> 
 	<div class = "Listen">
 		{{#each groups}}
-			{{#if joined}}
+			{{#if_in id (lookup (lookup ../users ../current_user) 'groups')}}
 			<div class="content-card grpplans">
 				<header>
     			<h3>{{name}}</h3>
@@ -36,7 +36,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 				{{> includes/group-plans gid=id}}
 				</div>
 			</div>
-			{{/if}}
+			{{/if_in}}
 		{{/each}}
 	</div>
 	<script>

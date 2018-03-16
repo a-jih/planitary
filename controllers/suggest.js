@@ -20,7 +20,7 @@ exports.suggest = function (group_id) {
   console.log(group.members);
   for (var i = 0; i < group.members.length; ++i)
   {
-    var m_events = data.friends[group.members[i]]['ical-events'];
+    var m_events = data.users[group.members[i]]['ical-events'];
 
     add_events(members_events, m_events, cur_date, week_from);
   }

@@ -12,6 +12,16 @@ function hbsHelpers(hbs) {
         {
           return opts.inverse(this);
         }
+      },
+      if_in: function(elem, list, opts) {
+        if (list.indexOf(elem) > -1)
+        {
+          return opts.fn(this);
+        }
+        else
+        {
+          return opts.inverse(this);
+        }
       }
     }
   });

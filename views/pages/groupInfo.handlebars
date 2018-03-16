@@ -11,7 +11,13 @@
 				<h3>Suggested Plans</h3>
 			</header>
 			<div>
-				{{> includes/group-plans gid=id}}
+				{{#if_in id (lookup user "groups")}}
+					{{> includes/group-plans gid=id}}
+				{{else}}
+					<div style="padding:1rem">
+						<span style="font-style:italic;color:#666">Not a member</span> 😭
+					</div>
+				{{/if_in}}
 			</div>
 		</div>
 
@@ -25,7 +31,7 @@
 						{{> includes/group-events groupname=../name}}
 					{{/each}}
 				{{else}}
-					<span style="font-style:italic;color:#666">No events planned</span> 😥
+					<span style="font-style:italic;color:#666">No group events planned</span> 😥
 				{{/if}}
 			</div>
 		</div>
@@ -35,22 +41,19 @@
 				<h3>Members</h3>
 			</header>
 			<div class="content-card-body memberlist">
-				{{#if joined}}
-					<p>{{user.firstname}} {{user.lastname}}</p>
-				{{/if}}
 				{{#each memberinfo}}
-					<p>{{name}}</p>
+					<p>{{firstname}} {{lastname}}</p>
 				{{/each}}
 			</div>
 		</div>
 
 		<div class="content-card">
 			<div class="content-card-body">
-				{{#if joined}}
+				{{#if_in id (lookup user "groups")}}
 				<a class="btn btn-block btn-secondary" href="/joingroup/{{id}}">Leave Group</a>
 				{{else}}
 				<a class="btn btn-block btn-primary" href="/joingroup/{{id}}">Join Group</a>
-				{{/if}}
+				{{/if_in}}
 			</div>
 		</div>
 

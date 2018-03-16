@@ -1,4 +1,203 @@
 {
+  "current_user": "testacc",
+  "users": {
+    "testacc": {
+      "username": "testacc",
+      "password": "password",
+      "firstname": "Scott",
+      "lastname": "Klemmer",
+      "uploaded": false,
+      "ical-filename": "",
+      "ical-events": [],
+      "friends": [],
+      "groups": ["0"]
+    },
+    "0": {
+      "username": "0",
+      "password": "sfh743ryhiwerkf98q",
+      "firstname": "Dev",
+      "lastname": "Sharma",
+      "uploaded": true,
+      "ical-filename": "yolo.ics",
+      "ical-events": [
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 13,
+            "hour": 11,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 13,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 13,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 13,
+            "hour": 17,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 14,
+            "hour": 10,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 14,
+            "hour": 12,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 14,
+            "hour": 11,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 14,
+            "hour": 15,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 15,
+            "hour": 8,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 15,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 15,
+            "hour": 10,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 15,
+            "hour": 12,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        },
+        {
+          "start": {
+            "year": 2018,
+            "month": 2,
+            "day": 16,
+            "hour": 14,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          },
+          "end": {
+            "year": 2018,
+            "month": 2,
+            "day": 16,
+            "hour": 16,
+            "minute": 30,
+            "second": 0,
+            "isDate": false
+          }
+        }
+      ],
+      "friends": ["testacc"],
+      "groups": ["0", "2"]
+    },
+    "1": {
+      "username": "1",
+      "password": "password",
+      "firstname": "Chucky",
+      "lastname": "C",
+      "uploaded": false,
+      "ical-filename": "",
+      "ical-events": [],
+      "friends": ["testacc"],
+      "groups": ["0", "1", "2"]
+    },
+    "2": {
+      "username": "2",
+      "password": "password",
+      "firstname": "Tommy",
+      "lastname": "T",
+      "uploaded": false,
+      "ical-filename": "",
+      "ical-events": [],
+      "friends": ["testacc"],
+      "groups": ["0", "2"]
+    },
+    "3": {
+      "username": "3",
+      "password": "password",
+      "firstname": "Robby",
+      "lastname": "R",
+      "uploaded": false,
+      "ical-filename": "",
+      "ical-events": [],
+      "friends": ["testacc"],
+      "groups": ["1", "2"]
+    }
+  },
   "user": {
     "username": "testacc",
     "password": "password",

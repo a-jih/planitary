@@ -13,21 +13,21 @@
 {{#*inline "main-block"}}
 <main>
 
-	<form class="login-form">
+	<form class="login-form" method="POST" action="/login">
 		<p class="login-formcontrol">
-			<input class="login-input" placeholder="Username" type="text">
+			<input class="login-input" placeholder="Username" type="text" id="username" name="username">
 			<span class="underline"></span>
 		</p>
 		<p class="login-formcontrol">
-			<input class="login-input" placeholder="Password" type="password">
+			<input class="login-input" placeholder="Password" type="password" id="password" name="password">
 			<span class="underline"></span>
 		</p>
 
-		<a class="btn btn-block btn-primary login-submit" href="/planit">
+		<button type="submit" class="btn btn-block btn-primary login-submit">
 			<span>
 				Log In
 			</span>
-		</a>
+		</button>
 
 		<!-- Facebook Login -->
 		<script>

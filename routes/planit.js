@@ -13,7 +13,7 @@ exports.view = function(req, res){
   for (let groupid of Object.keys(data.groups))
   {
     // Get suggestions if member
-    if (data.groups[groupid].joined)
+    if (data.users[data.current_user].groups.indexOf(groupid) > -1)
     {
       data.groups[groupid].plans = planit.suggest(groupid);
 

@@ -13,9 +13,11 @@
 	<div class="content-card">
 		<div class="content-card-body">
 			{{#each groups}}
-				{{#each events}}
-					{{> includes/group-events groupname=../name}}
-				{{/each}}
+				{{#if_in id (lookup (lookup ../users ../current_user) 'groups')}}
+					{{#each events}}
+						{{> includes/group-events groupname=../name}}
+					{{/each}}
+				{{/if_in}}
 			{{/each}}
 		</div>
 	</div>

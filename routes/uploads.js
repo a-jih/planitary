@@ -10,21 +10,51 @@ var fs    = require('fs');
 var data = require('../data.json');
 
 exports.uploadSettings = function(req, res) {
-  addCal(req, res);
-  res.redirect('/settings');
-}
-
-exports.uploadSignup = function(req, res) {
-  addCal(req, res);
-  res.redirect('/planit');
-}
-
-function addCal(req, res) {
 
   if (!req.file)
   {
     res.redirect("/settings");
   }
+
+  addCal(req, res);
+  res.redirect('/settings');
+}
+
+exports.uploadSignup = function(req, res) {
+  let s_firstname = req.body.firstname;
+  let s_lastname = req.body.lastname;
+  let s_username = req.body.username;
+  let s_password = req.body.password;
+
+  if (s_firstname && s_lastname && s_username && s_password && req.file)
+  {
+    // Add new user
+    data.users[s_username] = {
+      firstname: s_firstname,
+      lastname: s_lastname,
+      username: s_username,
+      password: s_password,
+      uploaded: false,
+      "ical-filename": "",
+      "ical-events": [],
+      friends: [],
+      groups: []
+    };
+
+    // Add calendar
+    addCal(req, res);
+
+    // Set new user as current
+    data.current_user = s_username;
+
+    res.redirect('/planit');
+  }
+
+  // unsuccessful signup
+  res.redirect('/signup')
+}
+
+function addCal(req, res) {
 
   var ical_file = req.file.path;
 

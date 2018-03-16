@@ -35,6 +35,7 @@ var grpInfo  = require('./routes/groupInfo');
 var signup   = require('./routes/signup');
 var planB    = require('./routes/planb');
 var uploads  = require('./routes/uploads');
+var login    = require('./routes/login');
 
 var app = express();
 
@@ -78,6 +79,7 @@ app.post('/create', addEvent.create);
 app.post('/createGroup', addGroup.create);
 app.post('/upload', up.single('calendar'), uploads.uploadSettings);
 app.post('/upload-signup', up.single('calendar'), uploads.uploadSignup);
+app.post('/login', login.login);
 
 // Create server
 http.createServer(app).listen(app.get('port'), function(){

@@ -6,10 +6,10 @@
 		</a>
 	</header>
 	<div>
-		{{#if joined}}
+		{{#if_in id (lookup (lookup root.users root.current_user) 'groups')}}
 		Joined<i style="stroke:green" data-feather="check"></i>
 		{{else}}
 		Not a member
-		{{/if}}
+		{{/if_in}}
 	</div>
 </div>
