@@ -19,7 +19,7 @@ exports.view = function(req, res) {
       data['autofill-gname'] = data.groups[gid].name;
       data['autofill-start'] = planData.start;
       data['autofill-end']   = planData.end;
-      data['autofill-date']  = [String(planData.year), ('0' + String(planData.month)).slice(-2), String(planData.day)].join('-');
+      data['autofill-date']  = [String(planData.year), ('0' + String(planData.month+1)).slice(-2), String(planData.day)].join('-');
     }
   }
   else

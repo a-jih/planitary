@@ -14,7 +14,7 @@ exports.view = function(req, res){
   {
     for (let event of data.groups[groupid]["events"])
     {
-      event["month-string"] = months[Number(event.month) - 1];
+      event["month-string"] = months[Number(event.month)];
     }
   }
 
