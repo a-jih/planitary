@@ -1,8 +1,8 @@
 {
-  "current_user": "testacc",
+  "current_user": "sklemmer",
   "users": {
-    "testacc": {
-      "username": "testacc",
+    "sklemmer": {
+      "username": "sklemmer",
       "password": "password",
       "firstname": "Scott",
       "lastname": "Klemmer",
@@ -247,7 +247,7 @@
           "year": "2017",
           "startt": "3:00 PM",
           "endt": "4:00 PM",
-          "description": "Lots of New Assignments"
+          "description": "Prepare for the presentation."
         }
       ],
       "plans": {}
@@ -268,14 +268,14 @@
           "year": "2017",
           "startt": "12:00 PM",
           "endt": "1:00 PM",
-          "description": "Lots of New Assignments"
+          "description": "Let's make pinch pots!"
         }
       ],
       "plans": {}
     },
     "2": {
       "id": "2",
-      "name": "Lorem ipsum",
+      "name": "Dev Team",
       "joined": false,
       "members": [
         "0",
