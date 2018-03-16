@@ -49,9 +49,11 @@ exports.uploadSignup = function(req, res) {
 
     res.redirect('/planit');
   }
-
-  // unsuccessful signup
-  res.redirect('/signup')
+  else
+  {
+    // unsuccessful signup
+    res.redirect('/signup')
+  }
 }
 
 function addCal(req, res) {
